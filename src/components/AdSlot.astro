@@ -1,39 +1,64 @@
 ---
-// AdSlot.astro — High-performance AdSense Slot Placeholder with zero CLS
+// AdSlot.astro — High-performance Google AdSense Slot with zero CLS
 interface Props {
   slot?: string;
-  format?: 'horizontal' | 'rectangle' | 'in-feed';
+  format?: 'auto' | 'fluid' | 'rectangle' | 'horizontal';
+  minHeight?: number;
   class?: string;
 }
 
-const { slot = 'auto', format = 'horizontal', class: className = '' } = Astro.props;
+const {
+  slot,
+  format = 'auto',
+  minHeight = 100,
+  class: className = '',
+} = Astro.props;
 
-const formatClasses = {
-  'horizontal': 'min-h-[90px] md:min-h-[100px] w-full',
-  'rectangle': 'min-h-[250px] md:min-h-[280px] w-full max-w-[336px]',
-  'in-feed': 'min-h-[120px] w-full'
-}[format];
+const adClient = 'ca-pub-2168172914069272';
 ---
 
-<div class={`my-6 flex flex-col items-center justify-center ${className}`}>
-  <div class="text-[10px] uppercase tracking-wider text-slate-400 dark:text-slate-500 font-mono mb-1">
-    Advertisement
+<aside
+  class={`hpp-ad-container my-8 rounded-xl border border-dashed border-slate-300 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-900/60 p-4 text-center ${className}`}
+  aria-label="Advertisement"
+>
+  <div class="mb-2 text-[10px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 select-none">
+    <span>ADVERTISEMENT</span>
   </div>
-  <div class={`bg-slate-100 dark:bg-slate-800/50 border border-dashed border-slate-300 dark:border-slate-700 rounded-lg flex items-center justify-center overflow-hidden transition-all ${formatClasses}`}>
-    {slot !== 'auto' ? (
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-           data-ad-slot={slot}
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-    ) : (
-      <div class="text-xs text-slate-400 dark:text-slate-500 font-medium flex items-center gap-2">
-        <svg class="w-4 h-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-        </svg>
-        <span>Sponsored Real Estate Insights & Mortgage Offers</span>
-      </div>
-    )}
+  <div class="flex w-full items-center justify-center overflow-hidden" style={`min-height: ${minHeight}px;`}>
+    <ins
+      class="adsbygoogle"
+      style={`display:block; min-height: ${minHeight}px; width:100%;`}
+      data-ad-client={adClient}
+      {...(slot ? { 'data-ad-slot': slot } : {})}
+      data-ad-format={format}
+      data-full-width-responsive="true"
+    ></ins>
   </div>
-</div>
+</aside>
+
+<script is:inline>
+  (function () {
+    if (typeof window === 'undefined') return;
+    if (window.__hppAdsInit) return;
+    window.__hppAdsInit = true;
+
+    function pushAd(ins) {
+      if (!ins || ins.getAttribute('data-hpp-loaded') === '1') return;
+      ins.setAttribute('data-hpp-loaded', '1');
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {}
+    }
+
+    function initAds() {
+      var elements = document.querySelectorAll('ins.adsbygoogle');
+      elements.forEach(pushAd);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initAds);
+    } else {
+      initAds();
+    }
+  })();
+</script>
