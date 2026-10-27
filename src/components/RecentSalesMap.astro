@@ -1,0 +1,255 @@
+---
+// src/components/RecentSalesMap.astro — Interactive Leaflet Map for Recent Sold Properties
+interface Sale {
+  date: string;
+  address: string;
+  postcode: string;
+  price: number;
+  type: string;
+  tenure: string;
+  newBuild?: boolean;
+}
+
+interface Props {
+  outcode: string;
+  outcodeName: string;
+  recentSales: Sale[];
+  avgPrice: number;
+}
+
+const { outcode, outcodeName, recentSales, avgPrice } = Astro.props;
+const outcodeUpper = outcode.toUpperCase();
+---
+
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden shadow-sm">
+  <!-- Map Header -->
+  <div class="p-5 sm:p-6 border-b border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-slate-50/50 dark:bg-slate-900/50">
+    <div>
+      <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-900 text-blue-700 dark:text-blue-300 text-xs font-semibold mb-1">
+        <span class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
+        Interactive Map View
+      </div>
+      <h3 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
+        Recent Sold Properties Map in {outcodeUpper}
+      </h3>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+        Click on any price marker to view transaction details, property type, and comparable valuations.
+      </p>
+    </div>
+
+    <!-- Quick Stats Pill -->
+    <div class="flex items-center gap-3">
+      <div class="text-right hidden sm:block">
+        <div class="text-xs text-slate-400">District Average</div>
+        <div class="text-sm font-bold text-slate-900 dark:text-white">£{avgPrice.toLocaleString()}</div>
+      </div>
+      <a
+        href="/free-valuation/"
+        class="px-3.5 py-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-xl shadow-sm transition whitespace-nowrap"
+      >
+        Value My Street
+      </a>
+    </div>
+  </div>
+
+  <!-- Map Canvas -->
+  <div class="relative w-full h-[420px] sm:h-[480px] bg-slate-100 dark:bg-slate-950">
+    <div id="sales-map" class="w-full h-full z-10" data-outcode={outcodeUpper} data-sales={JSON.stringify(recentSales)}></div>
+
+    <!-- Loading Skeleton Overlay -->
+    <div id="map-loader" class="absolute inset-0 z-20 bg-slate-100 dark:bg-slate-900 flex flex-col items-center justify-center gap-3 text-slate-400 transition-opacity duration-300">
+      <svg class="w-8 h-8 animate-spin text-blue-600" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+      </svg>
+      <span class="text-xs font-medium">Loading {outcodeUpper} property coordinates...</span>
+    </div>
+  </div>
+
+  <!-- Map Legend Footer -->
+  <div class="p-3 sm:p-4 bg-slate-50 dark:bg-slate-950/70 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500 dark:text-slate-400">
+    <div class="flex items-center gap-4">
+      <span class="flex items-center gap-1.5">
+        <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+        Flats / Apartments
+      </span>
+      <span class="flex items-center gap-1.5">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+        Houses (Terraced / Semi / Detached)
+      </span>
+    </div>
+    <span class="text-[11px] text-slate-400">
+      Map tiles © OpenStreetMap & CartoDB
+    </span>
+  </div>
+</div>
+
+<!-- Load Leaflet Assets -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+<style is:inline>
+  .leaflet-popup-content-wrapper {
+    border-radius: 14px;
+    padding: 4px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  }
+  .leaflet-popup-content {
+    margin: 8px 12px;
+    line-height: 1.4;
+  }
+  .custom-price-pill {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .custom-price-pill:hover {
+    transform: scale(1.1) translateY(-2px);
+    z-index: 9999 !important;
+  }
+</style>
+
+<script is:inline>
+  (function initMap() {
+    const mapEl = document.getElementById('sales-map');
+    const loader = document.getElementById('map-loader');
+    if (!mapEl || typeof window.L === 'undefined') {
+      setTimeout(initMap, 100);
+      return;
+    }
+
+    const outcode = mapEl.getAttribute('data-outcode');
+    let sales = [];
+    try {
+      sales = JSON.parse(mapEl.getAttribute('data-sales') || '[]');
+    } catch (e) {
+      sales = [];
+    }
+
+    function formatPriceBadge(price) {
+      if (price >= 1000000) {
+        return '£' + (price / 1000000).toFixed(2).replace(/\.00$/, '') + 'M';
+      }
+      return '£' + Math.round(price / 1000) + 'k';
+    }
+
+    // First fetch outcode centroid from postcodes.io
+    fetch('https://api.postcodes.io/outcodes/' + encodeURIComponent(outcode))
+      .then(res => res.json())
+      .then(outcodeRes => {
+        let centerLat = 51.5074;
+        let centerLng = -0.1278;
+
+        if (outcodeRes && outcodeRes.status === 200 && outcodeRes.result) {
+          centerLat = outcodeRes.result.latitude;
+          centerLng = outcodeRes.result.longitude;
+        }
+
+        // Initialize Leaflet Map
+        const map = L.map('sales-map', {
+          center: [centerLat, centerLng],
+          zoom: 14,
+          scrollWheelZoom: false
+        });
+
+        // Add CartoDB Positron clean tiles
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+          subdomains: 'abcd',
+          maxZoom: 19
+        }).addTo(map);
+
+        // Fetch exact coordinates for the recent sales postcodes in batch
+        const postcodesList = sales.map(s => s.postcode).filter(Boolean);
+
+        fetch('https://api.postcodes.io/postcodes', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ postcodes: postcodesList })
+        })
+          .then(res => res.json())
+          .then(batchRes => {
+            const coordMap = {};
+            if (batchRes && batchRes.status === 200 && Array.isArray(batchRes.result)) {
+              batchRes.result.forEach(item => {
+                if (item.result && item.query) {
+                  coordMap[item.query.toUpperCase()] = {
+                    lat: item.result.latitude,
+                    lng: item.result.longitude
+                  };
+                }
+              });
+            }
+
+            const markers = [];
+
+            sales.forEach((sale, idx) => {
+              const pcUpper = (sale.postcode || '').toUpperCase();
+              let lat, lng;
+
+              if (coordMap[pcUpper]) {
+                lat = coordMap[pcUpper].lat;
+                lng = coordMap[pcUpper].lng;
+              } else {
+                // Natural jitter around center if exact unit postcode is unmapped
+                const angle = (idx / sales.length) * 2 * Math.PI;
+                const dist = 0.003 + (idx * 0.001);
+                lat = centerLat + Math.sin(angle) * dist;
+                lng = centerLng + Math.cos(angle) * (dist * 1.5);
+              }
+
+              const isFlat = (sale.type || '').toLowerCase().includes('flat');
+              const bgColor = isFlat ? 'bg-blue-600' : 'bg-emerald-600';
+              const priceText = formatPriceBadge(sale.price);
+
+              const customIcon = L.divIcon({
+                className: 'custom-price-pill-wrapper',
+                html: `<div class="custom-price-pill px-2.5 py-1 ${bgColor} text-white font-extrabold text-xs rounded-full shadow-md border-2 border-white flex items-center justify-center whitespace-nowrap cursor-pointer">
+                        ${priceText}
+                       </div>`,
+                iconSize: [60, 26],
+                iconAnchor: [30, 13]
+              });
+
+              const popupHtml = `
+                <div class="p-1 font-sans text-slate-900" style="min-width: 190px;">
+                  <div class="font-bold text-sm leading-tight">${sale.address}</div>
+                  <div class="text-[11px] text-slate-500 font-mono mt-0.5">${sale.postcode}</div>
+                  <div class="text-base font-extrabold text-blue-600 mt-2">£${sale.price.toLocaleString()}</div>
+                  <div class="mt-1 flex items-center gap-1.5 text-xs text-slate-600">
+                    <span class="px-1.5 py-0.5 bg-slate-100 font-medium rounded text-slate-700">${sale.type}</span>
+                    <span>•</span>
+                    <span>${sale.tenure}</span>
+                  </div>
+                  <div class="text-[11px] text-slate-400 mt-1">Sold on ${sale.date}</div>
+                  <a href="/free-valuation/?postcode=${encodeURIComponent(sale.postcode)}" class="mt-3 block text-center py-1.5 px-3 bg-emerald-600 hover:bg-emerald-500 text-white text-[11px] font-bold rounded-lg transition" style="text-decoration: none;">
+                    Get Valuation For This Street →
+                  </a>
+                </div>
+              `;
+
+              const marker = L.marker([lat, lng], { icon: customIcon })
+                .bindPopup(popupHtml)
+                .addTo(map);
+
+              markers.push(marker);
+            });
+
+            // Adjust bounds to fit all property markers
+            if (markers.length > 0) {
+              const group = L.featureGroup(markers);
+              map.fitBounds(group.getBounds().pad(0.18));
+            }
+
+            if (loader) {
+              loader.classList.add('opacity-0', 'pointer-events-none');
+              setTimeout(() => loader.remove(), 350);
+            }
+          })
+          .catch(() => {
+            if (loader) loader.remove();
+          });
+      })
+      .catch(() => {
+        if (loader) loader.remove();
+      });
+  })();
+</script>
