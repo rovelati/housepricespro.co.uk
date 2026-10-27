@@ -117,6 +117,8 @@ Database rilevati (non eliminare):
 - `programmitv`
 - `stock_tracker`
 - `uktvtonight` (proprietario: uktvtonight_app - uktvtonight.co.uk)
+- `checkmotpro` (proprietario: checkmotpro_app - checkmotpro.co.uk)
+- `housepricespro` (proprietario: housepricespro_app - housepricespro.co.uk)
 
 Nuovo progetto:
 
@@ -147,7 +149,8 @@ Gruppi principali (non disabilitare senza capire l’impatto):
 - **Veterinari:** enrichment prioritario (06:00), lead marketing (08:00, 13:00).
 - **Fernsehheute DE:** EPG/tmdb/rebuild astro (04:xx–05:xx).
 - **UK TV Tonight:** Rebuild EPG mattutino (05:30), refresh EPG e ping IndexNow serale pre-prime time (17:30 = 16:30 UK), ping notturno domani (23:30 = 22:30 UK). Log in `/var/log/uktvtonight/`.
-- **PrezzoBenza (prezzobenza.it):** Rebuild notturno (02:30), ingestione dati MIMIT, deploy Cloudflare Pages e ping IndexNow. Log in `/var/log/prezzobenza-rebuild.log`.
+- **CheckMOTPro (checkmotpro.co.uk):** Rebuild notturno (02:45), deploy Cloudflare Pages e ping IndexNow. Log in `/var/log/checkmotpro-rebuild.log`.
+- **HousePricesPro (housepricespro.co.uk):** Rebuild notturno (03:45), ingestione HM Land Registry PPD in PostgreSQL, calcolo statistiche per distretto, deploy Cloudflare Pages e ping IndexNow. Log in `/var/log/housepricespro-rebuild.log`.
 
 Prima di aggiungere cron RealTime Discover: usare `flock` + log dedicato sotto `/var/log/realtimediscover/`.
 
