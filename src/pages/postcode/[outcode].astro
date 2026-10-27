@@ -1,0 +1,397 @@
+---
+// src/pages/postcode/[outcode].astro — Programmatic SEO Postcode District Page
+import Layout from '../../layouts/Layout.astro';
+import ValuationWidget from '../../components/ValuationWidget.astro';
+import MortgageWidget from '../../components/MortgageWidget.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import postcodesData from '../../data/uk_postcodes_summary.json';
+
+export async function getStaticPaths() {
+  return postcodesData.map((district) => ({
+    params: { outcode: district.outcode.toLowerCase() },
+    props: { district },
+  }));
+}
+
+const { district } = Astro.props;
+const outcodeUpper = district.outcode.toUpperCase();
+
+const title = `${outcodeUpper} Sold House Prices & Property Market Register 2026 | HousePricesPro`;
+const description = `Check official HM Land Registry sold property prices in ${outcodeUpper} (${district.town}, ${district.county}). Average house price is £${district.avgPrice.toLocaleString()} (+${district.yoyGrowth}% YoY). View recent sales records and free valuations.`;
+
+// Calculate SDLT for moving home on average price
+function calculateSDLT(price: number): number {
+  let tax = 0;
+  if (price > 1500000) {
+    tax += (price - 1500000) * 0.12;
+    price = 1500000;
+  }
+  if (price > 925000) {
+    tax += (price - 925000) * 0.10;
+    price = 925000;
+  }
+  if (price > 250000) {
+    tax += (price - 250000) * 0.05;
+  }
+  return Math.round(tax);
+}
+
+const estSDLT = calculateSDLT(district.avgPrice);
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://housepricespro.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": `${outcodeUpper} House Prices`,
+          "item": `https://housepricespro.co.uk/postcode/${district.outcode}/`
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": `HM Land Registry Price Paid Data for ${outcodeUpper}`,
+      "description": `Official registered sales prices and market trends for postcode district ${outcodeUpper} (${district.name}, ${district.town}) compiled by HM Land Registry.`,
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": `${outcodeUpper}, ${district.town}, UK`
+      },
+      "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "creator": {
+        "@type": "Organization",
+        "name": "HM Land Registry"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": `What is the average house price in ${outcodeUpper}?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `According to official HM Land Registry sold records, the average property price in ${outcodeUpper} (${district.town}) is £${district.avgPrice.toLocaleString()}, with a median price of £${district.medianPrice.toLocaleString()}. Prices have changed by +${district.yoyGrowth}% over the last 12 months.`
+          }
+        },
+        {
+          "@type": "Question",
+          "name": `How many properties were sold in ${outcodeUpper} recently?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `There have been ${district.totalSales.toLocaleString()} residential transactions registered in ${outcodeUpper} over the past 24-month Land Registry reporting period.`
+          }
+        },
+        {
+          "@type": "Question",
+          "name": `What is the most common property type in ${outcodeUpper}?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `The property market in ${outcodeUpper} consists of ${district.propertyTypes.flat.pct}% Flats/Apartments, ${district.propertyTypes.terraced.pct}% Terraced houses, ${district.propertyTypes.semi.pct}% Semi-Detached, and ${district.propertyTypes.detached.pct}% Detached properties.`
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+
+<Layout title={title} description={description} schema={schema}>
+  <!-- Breadcrumbs & District Hero Header -->
+  <header class="bg-gradient-to-b from-slate-900 to-slate-950 text-white pt-8 pb-14 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumbs -->
+      <nav class="flex items-center gap-2 text-xs text-slate-400 mb-6">
+        <a href="/" class="hover:text-white transition">Home</a>
+        <span>/</span>
+        <span class="text-slate-500">Postcodes</span>
+        <span>/</span>
+        <span class="text-white font-medium">{outcodeUpper}</span>
+      </nav>
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold mb-3">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>Postcode District • {district.region}</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
+            <span class="text-blue-400 font-mono">{outcodeUpper}</span> Sold House Prices
+          </h1>
+          <p class="text-slate-300 text-base mt-2">
+            {district.name} — {district.town}, {district.county}
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="#recent-sales"
+            class="px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-xl border border-slate-700 transition"
+          >
+            View Recent Sales
+          </a>
+          <a
+            href="/free-valuation/"
+            class="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold rounded-xl shadow transition"
+          >
+            Free Valuation in {outcodeUpper}
+          </a>
+        </div>
+      </div>
+
+      <!-- Key Stat Counters -->
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-slate-800/60 backdrop-blur-sm border border-slate-700/60 rounded-xl p-4">
+          <div class="text-xs text-slate-400 font-medium">Average Sold Price</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white mt-1">
+            £{district.avgPrice.toLocaleString()}
+          </div>
+          <div class="text-xs text-slate-400 mt-1">
+            Median: £{district.medianPrice.toLocaleString()}
+          </div>
+        </div>
+
+        <div class="bg-slate-800/60 backdrop-blur-sm border border-slate-700/60 rounded-xl p-4">
+          <div class="text-xs text-slate-400 font-medium">12-Month Growth (YoY)</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 mt-1">
+            +{district.yoyGrowth}%
+          </div>
+          <div class="text-xs text-slate-400 mt-1">
+            3-Year: +{district.threeYearGrowth}%
+          </div>
+        </div>
+
+        <div class="bg-slate-800/60 backdrop-blur-sm border border-slate-700/60 rounded-xl p-4">
+          <div class="text-xs text-slate-400 font-medium">Recorded Transactions</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-white mt-1">
+            {district.totalSales.toLocaleString()}
+          </div>
+          <div class="text-xs text-slate-400 mt-1">
+            Official Land Registry records
+          </div>
+        </div>
+
+        <div class="bg-slate-800/60 backdrop-blur-sm border border-slate-700/60 rounded-xl p-4">
+          <div class="text-xs text-slate-400 font-medium">Est. Stamp Duty (SDLT)</div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 mt-1">
+            £{estSDLT.toLocaleString()}
+          </div>
+          <div class="text-xs text-slate-400 mt-1">
+            Standard mover on average price
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Top In-Content Ad -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <AdSlot format="horizontal" />
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+    <!-- Property Types Breakdown -->
+    <section>
+      <h2 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-2">
+        {outcodeUpper} Property Types & Average Values
+      </h2>
+      <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-6">
+        Detailed breakdown by property archetype based on historical Land Registry sold prices in {outcodeUpper}.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Detached -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-sm">
+          <div class="flex justify-between items-center text-xs text-slate-500 dark:text-slate-400 mb-2">
+            <span class="font-bold text-slate-800 dark:text-white uppercase tracking-wider">Detached</span>
+            <span>{district.propertyTypes.detached.pct}% of market</span>
+          </div>
+          <div class="text-2xl font-extrabold text-slate-900 dark:text-white">
+            £{district.propertyTypes.detached.avg.toLocaleString()}
+          </div>
+          <div class="text-xs text-slate-400 mt-2">
+            {district.propertyTypes.detached.count} sales registered
+          </div>
+        </div>
+
+        <!-- Semi-Detached -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-sm">
+          <div class="flex justify-between items-center text-xs text-slate-500 dark:text-slate-400 mb-2">
+            <span class="font-bold text-slate-800 dark:text-white uppercase tracking-wider">Semi-Detached</span>
+            <span>{district.propertyTypes.semi.pct}% of market</span>
+          </div>
+          <div class="text-2xl font-extrabold text-slate-900 dark:text-white">
+            £{district.propertyTypes.semi.avg.toLocaleString()}
+          </div>
+          <div class="text-xs text-slate-400 mt-2">
+            {district.propertyTypes.semi.count} sales registered
+          </div>
+        </div>
+
+        <!-- Terraced -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-sm">
+          <div class="flex justify-between items-center text-xs text-slate-500 dark:text-slate-400 mb-2">
+            <span class="font-bold text-slate-800 dark:text-white uppercase tracking-wider">Terraced</span>
+            <span>{district.propertyTypes.terraced.pct}% of market</span>
+          </div>
+          <div class="text-2xl font-extrabold text-slate-900 dark:text-white">
+            £{district.propertyTypes.terraced.avg.toLocaleString()}
+          </div>
+          <div class="text-xs text-slate-400 mt-2">
+            {district.propertyTypes.terraced.count} sales registered
+          </div>
+        </div>
+
+        <!-- Flats / Apartments -->
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-sm">
+          <div class="flex justify-between items-center text-xs text-slate-500 dark:text-slate-400 mb-2">
+            <span class="font-bold text-slate-800 dark:text-white uppercase tracking-wider">Flats / Apts</span>
+            <span>{district.propertyTypes.flat.pct}% of market</span>
+          </div>
+          <div class="text-2xl font-extrabold text-slate-900 dark:text-white">
+            £{district.propertyTypes.flat.avg.toLocaleString()}
+          </div>
+          <div class="text-xs text-slate-400 mt-2">
+            {district.propertyTypes.flat.count} sales registered
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Valuation CTA Banner -->
+    <ValuationWidget postcode={district.outcode} town={district.town} />
+
+    <!-- Recent Sales Table -->
+    <section id="recent-sales" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+        <div>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white">
+            Recent Land Registry Sold Records in {outcodeUpper}
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400">
+            Official completed transactions registered with HM Land Registry.
+          </p>
+        </div>
+        <span class="px-2.5 py-1 bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 text-xs font-semibold rounded-md border border-emerald-200 dark:border-emerald-900 self-start sm:self-auto">
+          Verified Sales
+        </span>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs sm:text-sm">
+          <thead>
+            <tr class="border-b border-slate-200 dark:border-slate-800 text-slate-400 text-xs uppercase tracking-wider">
+              <th class="py-3 px-3 font-semibold">Sale Date</th>
+              <th class="py-3 px-3 font-semibold">Address</th>
+              <th class="py-3 px-3 font-semibold">Type</th>
+              <th class="py-3 px-3 font-semibold">Tenure</th>
+              <th class="py-3 px-3 font-semibold text-right">Sold Price</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+            {district.recentSales.map((sale) => (
+              <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
+                <td class="py-3.5 px-3 font-mono text-slate-500 dark:text-slate-400 whitespace-nowrap">
+                  {sale.date}
+                </td>
+                <td class="py-3.5 px-3 font-semibold text-slate-900 dark:text-white">
+                  {sale.address}
+                  <span class="block text-xs font-mono font-normal text-slate-400">{sale.postcode}</span>
+                </td>
+                <td class="py-3.5 px-3">
+                  <span class="px-2 py-0.5 rounded text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                    {sale.type}
+                  </span>
+                </td>
+                <td class="py-3.5 px-3 text-xs text-slate-500 dark:text-slate-400">
+                  {sale.tenure}
+                </td>
+                <td class="py-3.5 px-3 text-right font-bold text-slate-900 dark:text-white whitespace-nowrap">
+                  £{sale.price.toLocaleString()}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Top Streets Directory -->
+    <section class="bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
+      <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">
+        Most Active Streets in {outcodeUpper}
+      </h3>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mb-6">
+        Streets with the highest transaction volumes and average prices in {district.name}.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        {district.topStreets.map((street) => (
+          <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4 flex justify-between items-center">
+            <div>
+              <div class="font-bold text-sm text-slate-900 dark:text-white">{street.name}</div>
+              <div class="text-xs text-slate-400">{street.salesCount} sales registered</div>
+            </div>
+            <div class="text-right">
+              <div class="text-sm font-extrabold text-blue-600 dark:text-blue-400">
+                £{street.avgPrice.toLocaleString()}
+              </div>
+              <div class="text-[11px] text-slate-400">avg price</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Mortgage Calculator Section for this Postcode -->
+    <section>
+      <MortgageWidget initialPrice={district.avgPrice} postcode={district.outcode} />
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8">
+      <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6">
+        Frequently Asked Questions about {outcodeUpper} Property Prices
+      </h3>
+
+      <div class="space-y-6">
+        <div>
+          <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">
+            What is the average house price in {outcodeUpper}?
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Based on official HM Land Registry completed transaction records, the average sold property price across {outcodeUpper} ({district.town}) is £{district.avgPrice.toLocaleString()}. The median price is £{district.medianPrice.toLocaleString()}, representing a +{district.yoyGrowth}% increase over the past 12 months.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">
+            How much Stamp Duty (SDLT) will I pay for a home in {outcodeUpper}?
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            For an average priced property of £{district.avgPrice.toLocaleString()} in {outcodeUpper}, a standard home mover in England will pay approximately £{estSDLT.toLocaleString()} in Stamp Duty Land Tax. First-time buyers may qualify for relief on properties up to £425,000.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-1">
+            Where does this property sales data come from?
+          </h4>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            All sales records are sourced from HM Land Registry Price Paid Data under the Open Government Licence v3.0. Data includes residential property sales in England and Wales lodged for registration with legal completion dates.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>

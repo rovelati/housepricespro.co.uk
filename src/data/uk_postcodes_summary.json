@@ -1,0 +1,6617 @@
+[
+  {
+    "outcode": "sw1a",
+    "name": "Westminster & Whitehall",
+    "region": "Central London",
+    "town": "London",
+    "county": "Greater London",
+    "avgPrice": 1339304,
+    "medianPrice": 1258946,
+    "totalSales": 913,
+    "yoyGrowth": 2.8,
+    "threeYearGrowth": 7.8,
+    "propertyTypes": {
+      "detached": {
+        "avg": 2682500,
+        "count": 57,
+        "pct": 6
+      },
+      "semi": {
+        "avg": 1957500,
+        "count": 80,
+        "pct": 9
+      },
+      "terraced": {
+        "avg": 1522500,
+        "count": 91,
+        "pct": 10
+      },
+      "flat": {
+        "avg": 1131000,
+        "count": 685,
+        "pct": 75
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Whitehall Court",
+        "avgPrice": 1138408,
+        "salesCount": 20
+      },
+      {
+        "name": "Buckingham Gate",
+        "avgPrice": 1245553,
+        "salesCount": 29
+      },
+      {
+        "name": "Birdcage Walk",
+        "avgPrice": 1352697,
+        "salesCount": 26
+      },
+      {
+        "name": "Palace Street",
+        "avgPrice": 1459841,
+        "salesCount": 34
+      },
+      {
+        "name": "Horse Guards Avenue",
+        "avgPrice": 1566986,
+        "salesCount": 35
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Whitehall Court",
+        "postcode": "SW1A 8AD",
+        "price": 1071443,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Buckingham Gate",
+        "postcode": "SW1A 3AB",
+        "price": 1406269,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Birdcage Walk",
+        "postcode": "SW1A 8AV",
+        "price": 1004478,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Whitehall Court",
+        "postcode": "SW1A 7AM",
+        "price": 1741095,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Palace Street",
+        "postcode": "SW1A 2AT",
+        "price": 1473234,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Horse Guards Avenue",
+        "postcode": "SW1A 8AJ",
+        "price": 1098229,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Birdcage Walk",
+        "postcode": "SW1A 4AV",
+        "price": 2544678,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Buckingham Gate",
+        "postcode": "SW1A 4AG",
+        "price": 1848240,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "w1k",
+    "name": "Mayfair Central",
+    "region": "Central London",
+    "town": "London",
+    "county": "Greater London",
+    "avgPrice": 2551882,
+    "medianPrice": 2398769,
+    "totalSales": 491,
+    "yoyGrowth": 3.2,
+    "threeYearGrowth": 9,
+    "propertyTypes": {
+      "detached": {
+        "avg": 5272500,
+        "count": 25,
+        "pct": 5
+      },
+      "semi": {
+        "avg": 3847500,
+        "count": 34,
+        "pct": 7
+      },
+      "terraced": {
+        "avg": 2992500,
+        "count": 39,
+        "pct": 8
+      },
+      "flat": {
+        "avg": 2223000,
+        "count": 393,
+        "pct": 80
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Grosvenor Square",
+        "avgPrice": 2169100,
+        "salesCount": 38
+      },
+      {
+        "name": "Park Lane",
+        "avgPrice": 2373250,
+        "salesCount": 12
+      },
+      {
+        "name": "Mount Street",
+        "avgPrice": 2577401,
+        "salesCount": 14
+      },
+      {
+        "name": "South Audley Street",
+        "avgPrice": 2781551,
+        "salesCount": 23
+      },
+      {
+        "name": "Davies Street",
+        "avgPrice": 2985702,
+        "salesCount": 31
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Grosvenor Square",
+        "postcode": "W1K 7AX",
+        "price": 2041506,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Park Lane",
+        "postcode": "W1K 3AH",
+        "price": 2679476,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Mount Street",
+        "postcode": "W1K 6AU",
+        "price": 1913912,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Grosvenor Square",
+        "postcode": "W1K 9AF",
+        "price": 3317447,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 South Audley Street",
+        "postcode": "W1K 7AC",
+        "price": 2807070,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Davies Street",
+        "postcode": "W1K 6AQ",
+        "price": 2092543,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Mount Street",
+        "postcode": "W1K 5AA",
+        "price": 4848576,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Park Lane",
+        "postcode": "W1K 4AY",
+        "price": 3521597,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "ec1a",
+    "name": "City of London & Farringdon",
+    "region": "Central London",
+    "town": "London",
+    "county": "Greater London",
+    "avgPrice": 771516,
+    "medianPrice": 725225,
+    "totalSales": 894,
+    "yoyGrowth": 1.9,
+    "threeYearGrowth": 5.3,
+    "propertyTypes": {
+      "detached": {
+        "avg": 1646500,
+        "count": 34,
+        "pct": 4
+      },
+      "semi": {
+        "avg": 1201500,
+        "count": 47,
+        "pct": 5
+      },
+      "terraced": {
+        "avg": 934500,
+        "count": 54,
+        "pct": 6
+      },
+      "flat": {
+        "avg": 694200,
+        "count": 760,
+        "pct": 85
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Charterhouse Street",
+        "avgPrice": 655789,
+        "salesCount": 38
+      },
+      {
+        "name": "St John Street",
+        "avgPrice": 717510,
+        "salesCount": 29
+      },
+      {
+        "name": "Long Lane",
+        "avgPrice": 779231,
+        "salesCount": 34
+      },
+      {
+        "name": "West Smithfield",
+        "avgPrice": 840952,
+        "salesCount": 37
+      },
+      {
+        "name": "Cloth Fair",
+        "avgPrice": 902674,
+        "salesCount": 33
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Charterhouse Street",
+        "postcode": "EC1A 4AE",
+        "price": 617213,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 St John Street",
+        "postcode": "EC1A 8AA",
+        "price": 810092,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Long Lane",
+        "postcode": "EC1A 6AN",
+        "price": 578637,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Charterhouse Street",
+        "postcode": "EC1A 9AT",
+        "price": 1002971,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 West Smithfield",
+        "postcode": "EC1A 4AS",
+        "price": 848668,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Cloth Fair",
+        "postcode": "EC1A 1AV",
+        "price": 632643,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Long Lane",
+        "postcode": "EC1A 3AM",
+        "price": 1465880,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 St John Street",
+        "postcode": "EC1A 4AH",
+        "price": 1064692,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "wc2e",
+    "name": "Covent Garden",
+    "region": "Central London",
+    "town": "London",
+    "county": "Greater London",
+    "avgPrice": 1060990,
+    "medianPrice": 997331,
+    "totalSales": 1043,
+    "yoyGrowth": 2.4,
+    "threeYearGrowth": 6.7,
+    "propertyTypes": {
+      "detached": {
+        "avg": 2312500,
+        "count": 31,
+        "pct": 3
+      },
+      "semi": {
+        "avg": 1687500,
+        "count": 44,
+        "pct": 4
+      },
+      "terraced": {
+        "avg": 1312500,
+        "count": 50,
+        "pct": 5
+      },
+      "flat": {
+        "avg": 975000,
+        "count": 918,
+        "pct": 88
+      }
+    },
+    "topStreets": [
+      {
+        "name": "King Street",
+        "avgPrice": 901842,
+        "salesCount": 35
+      },
+      {
+        "name": "Floral Street",
+        "avgPrice": 986721,
+        "salesCount": 26
+      },
+      {
+        "name": "Bedford Street",
+        "avgPrice": 1071600,
+        "salesCount": 17
+      },
+      {
+        "name": "Henrietta Street",
+        "avgPrice": 1156479,
+        "salesCount": 36
+      },
+      {
+        "name": "Maiden Lane",
+        "avgPrice": 1241358,
+        "salesCount": 21
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 King Street",
+        "postcode": "WC2E 3AU",
+        "price": 848792,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Floral Street",
+        "postcode": "WC2E 7AI",
+        "price": 1114040,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Bedford Street",
+        "postcode": "WC2E 6AC",
+        "price": 795743,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 King Street",
+        "postcode": "WC2E 5AW",
+        "price": 1379287,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Henrietta Street",
+        "postcode": "WC2E 8AJ",
+        "price": 1167089,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Maiden Lane",
+        "postcode": "WC2E 6AF",
+        "price": 870012,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Bedford Street",
+        "postcode": "WC2E 2AN",
+        "price": 2015881,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Floral Street",
+        "postcode": "WC2E 6AF",
+        "price": 1464166,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "nw1",
+    "name": "Camden Town & Regent's Park",
+    "region": "Central London",
+    "town": "London",
+    "county": "Greater London",
+    "avgPrice": 875951,
+    "medianPrice": 823394,
+    "totalSales": 778,
+    "yoyGrowth": 3.1,
+    "threeYearGrowth": 8.7,
+    "propertyTypes": {
+      "detached": {
+        "avg": 1702000,
+        "count": 58,
+        "pct": 8
+      },
+      "semi": {
+        "avg": 1242000,
+        "count": 82,
+        "pct": 11
+      },
+      "terraced": {
+        "avg": 966000,
+        "count": 93,
+        "pct": 12
+      },
+      "flat": {
+        "avg": 717600,
+        "count": 545,
+        "pct": 70
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Parkway",
+        "avgPrice": 744558,
+        "salesCount": 21
+      },
+      {
+        "name": "Camden High Street",
+        "avgPrice": 814634,
+        "salesCount": 36
+      },
+      {
+        "name": "Gloucester Gate",
+        "avgPrice": 884711,
+        "salesCount": 24
+      },
+      {
+        "name": "Arlington Road",
+        "avgPrice": 954787,
+        "salesCount": 34
+      },
+      {
+        "name": "Delancey Street",
+        "avgPrice": 1024863,
+        "salesCount": 16
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Parkway",
+        "postcode": "NW1 4AX",
+        "price": 700761,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Camden High Street",
+        "postcode": "NW1 7AK",
+        "price": 919749,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Gloucester Gate",
+        "postcode": "NW1 2AV",
+        "price": 656963,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Parkway",
+        "postcode": "NW1 4AB",
+        "price": 1138736,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Arlington Road",
+        "postcode": "NW1 7AI",
+        "price": 963546,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Delancey Street",
+        "postcode": "NW1 2AB",
+        "price": 718280,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Gloucester Gate",
+        "postcode": "NW1 3AZ",
+        "price": 1664307,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Camden High Street",
+        "postcode": "NW1 5AI",
+        "price": 1208812,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "se1",
+    "name": "Southwark & Waterloo",
+    "region": "Central London",
+    "town": "London",
+    "county": "Greater London",
+    "avgPrice": 653031,
+    "medianPrice": 613849,
+    "totalSales": 498,
+    "yoyGrowth": 4.2,
+    "threeYearGrowth": 11.8,
+    "propertyTypes": {
+      "detached": {
+        "avg": 1369000,
+        "count": 22,
+        "pct": 5
+      },
+      "semi": {
+        "avg": 999000,
+        "count": 31,
+        "pct": 6
+      },
+      "terraced": {
+        "avg": 777000,
+        "count": 36,
+        "pct": 7
+      },
+      "flat": {
+        "avg": 577200,
+        "count": 408,
+        "pct": 82
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Borough High Street",
+        "avgPrice": 555076,
+        "salesCount": 17
+      },
+      {
+        "name": "Shad Thames",
+        "avgPrice": 607319,
+        "salesCount": 36
+      },
+      {
+        "name": "Bermondsey Street",
+        "avgPrice": 659561,
+        "salesCount": 12
+      },
+      {
+        "name": "Blackfriars Road",
+        "avgPrice": 711804,
+        "salesCount": 15
+      },
+      {
+        "name": "Tooley Street",
+        "avgPrice": 764046,
+        "salesCount": 19
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Borough High Street",
+        "postcode": "SE1 5AM",
+        "price": 522425,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Shad Thames",
+        "postcode": "SE1 9AW",
+        "price": 685683,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Bermondsey Street",
+        "postcode": "SE1 9AL",
+        "price": 489773,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Borough High Street",
+        "postcode": "SE1 8AG",
+        "price": 848940,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Blackfriars Road",
+        "postcode": "SE1 3AG",
+        "price": 718334,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Tooley Street",
+        "postcode": "SE1 3AK",
+        "price": 535485,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Bermondsey Street",
+        "postcode": "SE1 2AP",
+        "price": 1240759,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Shad Thames",
+        "postcode": "SE1 3AO",
+        "price": 901183,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "e1",
+    "name": "Whitechapel & Spitalfields",
+    "region": "East London",
+    "town": "London",
+    "county": "Greater London",
+    "avgPrice": 553231,
+    "medianPrice": 520037,
+    "totalSales": 756,
+    "yoyGrowth": 3.8,
+    "threeYearGrowth": 10.6,
+    "propertyTypes": {
+      "detached": {
+        "avg": 1128500,
+        "count": 42,
+        "pct": 5
+      },
+      "semi": {
+        "avg": 823500,
+        "count": 58,
+        "pct": 8
+      },
+      "terraced": {
+        "avg": 640500,
+        "count": 67,
+        "pct": 9
+      },
+      "flat": {
+        "avg": 475800,
+        "count": 590,
+        "pct": 78
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Commercial Street",
+        "avgPrice": 470246,
+        "salesCount": 18
+      },
+      {
+        "name": "Brick Lane",
+        "avgPrice": 514505,
+        "salesCount": 38
+      },
+      {
+        "name": "Whitechapel High Street",
+        "avgPrice": 558763,
+        "salesCount": 35
+      },
+      {
+        "name": "Leman Street",
+        "avgPrice": 603022,
+        "salesCount": 34
+      },
+      {
+        "name": "Hanbury Street",
+        "avgPrice": 647280,
+        "salesCount": 33
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Commercial Street",
+        "postcode": "E1 6AT",
+        "price": 442585,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Brick Lane",
+        "postcode": "E1 5AM",
+        "price": 580893,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Whitechapel High Street",
+        "postcode": "E1 4AW",
+        "price": 414923,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Commercial Street",
+        "postcode": "E1 6AR",
+        "price": 719200,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Leman Street",
+        "postcode": "E1 9AY",
+        "price": 608554,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Hanbury Street",
+        "postcode": "E1 7AB",
+        "price": 453649,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Whitechapel High Street",
+        "postcode": "E1 2AV",
+        "price": 1051139,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Brick Lane",
+        "postcode": "E1 9AN",
+        "price": 763459,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "w2",
+    "name": "Paddington & Bayswater",
+    "region": "Central London",
+    "town": "London",
+    "county": "Greater London",
+    "avgPrice": 959016,
+    "medianPrice": 901475,
+    "totalSales": 1157,
+    "yoyGrowth": 2.1,
+    "threeYearGrowth": 5.9,
+    "propertyTypes": {
+      "detached": {
+        "avg": 2035000,
+        "count": 46,
+        "pct": 4
+      },
+      "semi": {
+        "avg": 1485000,
+        "count": 65,
+        "pct": 6
+      },
+      "terraced": {
+        "avg": 1155000,
+        "count": 74,
+        "pct": 6
+      },
+      "flat": {
+        "avg": 858000,
+        "count": 972,
+        "pct": 84
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Westbourne Terrace",
+        "avgPrice": 815164,
+        "salesCount": 25
+      },
+      {
+        "name": "Sussex Gardens",
+        "avgPrice": 891885,
+        "salesCount": 39
+      },
+      {
+        "name": "Queensway",
+        "avgPrice": 968606,
+        "salesCount": 32
+      },
+      {
+        "name": "Hyde Park Square",
+        "avgPrice": 1045327,
+        "salesCount": 31
+      },
+      {
+        "name": "Gloucester Terrace",
+        "avgPrice": 1122049,
+        "salesCount": 14
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Westbourne Terrace",
+        "postcode": "W2 7AD",
+        "price": 767213,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Sussex Gardens",
+        "postcode": "W2 4AB",
+        "price": 1006967,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Queensway",
+        "postcode": "W2 3AB",
+        "price": 719262,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Westbourne Terrace",
+        "postcode": "W2 2AE",
+        "price": 1246721,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Hyde Park Square",
+        "postcode": "W2 5AV",
+        "price": 1054918,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Gloucester Terrace",
+        "postcode": "W2 7AI",
+        "price": 786393,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Queensway",
+        "postcode": "W2 7AD",
+        "price": 1822130,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Sussex Gardens",
+        "postcode": "W2 2AM",
+        "price": 1323442,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "sw3",
+    "name": "Chelsea",
+    "region": "Central London",
+    "town": "London",
+    "county": "Greater London",
+    "avgPrice": 2070816,
+    "medianPrice": 1946567,
+    "totalSales": 1039,
+    "yoyGrowth": 1.8,
+    "threeYearGrowth": 5,
+    "propertyTypes": {
+      "detached": {
+        "avg": 4070000,
+        "count": 73,
+        "pct": 7
+      },
+      "semi": {
+        "avg": 2970000,
+        "count": 102,
+        "pct": 10
+      },
+      "terraced": {
+        "avg": 2310000,
+        "count": 116,
+        "pct": 11
+      },
+      "flat": {
+        "avg": 1716000,
+        "count": 748,
+        "pct": 72
+      }
+    },
+    "topStreets": [
+      {
+        "name": "King's Road",
+        "avgPrice": 1760194,
+        "salesCount": 20
+      },
+      {
+        "name": "Sloane Avenue",
+        "avgPrice": 1925859,
+        "salesCount": 39
+      },
+      {
+        "name": "Draycott Place",
+        "avgPrice": 2091524,
+        "salesCount": 16
+      },
+      {
+        "name": "Cheyne Walk",
+        "avgPrice": 2257189,
+        "salesCount": 16
+      },
+      {
+        "name": "Cadogan Gardens",
+        "avgPrice": 2422855,
+        "salesCount": 13
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 King's Road",
+        "postcode": "SW3 6AC",
+        "price": 1656653,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Sloane Avenue",
+        "postcode": "SW3 9AE",
+        "price": 2174357,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Draycott Place",
+        "postcode": "SW3 7AL",
+        "price": 1553112,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 King's Road",
+        "postcode": "SW3 9AC",
+        "price": 2692061,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Cheyne Walk",
+        "postcode": "SW3 4AM",
+        "price": 2277898,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Cadogan Gardens",
+        "postcode": "SW3 9AP",
+        "price": 1698069,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Draycott Place",
+        "postcode": "SW3 5AG",
+        "price": 3934550,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Sloane Avenue",
+        "postcode": "SW3 9AF",
+        "price": 2857726,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "sw7",
+    "name": "South Kensington",
+    "region": "Central London",
+    "town": "London",
+    "county": "Greater London",
+    "avgPrice": 1790069,
+    "medianPrice": 1682665,
+    "totalSales": 883,
+    "yoyGrowth": 2,
+    "threeYearGrowth": 5.6,
+    "propertyTypes": {
+      "detached": {
+        "avg": 3607500,
+        "count": 53,
+        "pct": 6
+      },
+      "semi": {
+        "avg": 2632500,
+        "count": 74,
+        "pct": 8
+      },
+      "terraced": {
+        "avg": 2047500,
+        "count": 85,
+        "pct": 10
+      },
+      "flat": {
+        "avg": 1521000,
+        "count": 671,
+        "pct": 76
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Queen's Gate",
+        "avgPrice": 1521559,
+        "salesCount": 24
+      },
+      {
+        "name": "Cromwell Road",
+        "avgPrice": 1664764,
+        "salesCount": 17
+      },
+      {
+        "name": "Elvaston Place",
+        "avgPrice": 1807970,
+        "salesCount": 21
+      },
+      {
+        "name": "Onslow Gardens",
+        "avgPrice": 1951175,
+        "salesCount": 32
+      },
+      {
+        "name": "Harrington Gardens",
+        "avgPrice": 2094381,
+        "salesCount": 34
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Queen's Gate",
+        "postcode": "SW7 7AK",
+        "price": 1432055,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Cromwell Road",
+        "postcode": "SW7 2AB",
+        "price": 1879572,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Elvaston Place",
+        "postcode": "SW7 7AY",
+        "price": 1342552,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Queen's Gate",
+        "postcode": "SW7 3AL",
+        "price": 2327090,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Onslow Gardens",
+        "postcode": "SW7 2AR",
+        "price": 1969076,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Harrington Gardens",
+        "postcode": "SW7 1AW",
+        "price": 1467857,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Elvaston Place",
+        "postcode": "SW7 5AK",
+        "price": 3401131,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Cromwell Road",
+        "postcode": "SW7 3AP",
+        "price": 2470295,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "tw1",
+    "name": "Twickenham & St Margarets",
+    "region": "South West London",
+    "town": "Twickenham",
+    "county": "Greater London",
+    "avgPrice": 877182,
+    "medianPrice": 824551,
+    "totalSales": 882,
+    "yoyGrowth": 4.5,
+    "threeYearGrowth": 12.6,
+    "propertyTypes": {
+      "detached": {
+        "avg": 1443000,
+        "count": 132,
+        "pct": 15
+      },
+      "semi": {
+        "avg": 1053000,
+        "count": 185,
+        "pct": 21
+      },
+      "terraced": {
+        "avg": 819000,
+        "count": 212,
+        "pct": 24
+      },
+      "flat": {
+        "avg": 608400,
+        "count": 353,
+        "pct": 40
+      }
+    },
+    "topStreets": [
+      {
+        "name": "London Road",
+        "avgPrice": 745605,
+        "salesCount": 22
+      },
+      {
+        "name": "Richmond Road",
+        "avgPrice": 815779,
+        "salesCount": 37
+      },
+      {
+        "name": "St Margarets Road",
+        "avgPrice": 885954,
+        "salesCount": 14
+      },
+      {
+        "name": "Cross Deep",
+        "avgPrice": 956128,
+        "salesCount": 13
+      },
+      {
+        "name": "Chertsey Road",
+        "avgPrice": 1026303,
+        "salesCount": 25
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 London Road",
+        "postcode": "TW1 8AC",
+        "price": 701746,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Richmond Road",
+        "postcode": "TW1 2AC",
+        "price": 921041,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A St Margarets Road",
+        "postcode": "TW1 5AL",
+        "price": 657887,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 London Road",
+        "postcode": "TW1 5AT",
+        "price": 1140337,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Cross Deep",
+        "postcode": "TW1 5AN",
+        "price": 964900,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Chertsey Road",
+        "postcode": "TW1 2AI",
+        "price": 719289,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 St Margarets Road",
+        "postcode": "TW1 8AS",
+        "price": 1666646,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Richmond Road",
+        "postcode": "TW1 7AG",
+        "price": 1210511,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "kt1",
+    "name": "Kingston upon Thames",
+    "region": "South West London",
+    "town": "Kingston",
+    "county": "Greater London",
+    "avgPrice": 712281,
+    "medianPrice": 669544,
+    "totalSales": 789,
+    "yoyGrowth": 3.9,
+    "threeYearGrowth": 10.9,
+    "propertyTypes": {
+      "detached": {
+        "avg": 1202500,
+        "count": 108,
+        "pct": 14
+      },
+      "semi": {
+        "avg": 877500,
+        "count": 152,
+        "pct": 19
+      },
+      "terraced": {
+        "avg": 682500,
+        "count": 174,
+        "pct": 22
+      },
+      "flat": {
+        "avg": 507000,
+        "count": 355,
+        "pct": 45
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Portsmouth Road",
+        "avgPrice": 605439,
+        "salesCount": 12
+      },
+      {
+        "name": "High Street",
+        "avgPrice": 662421,
+        "salesCount": 38
+      },
+      {
+        "name": "Clarence Street",
+        "avgPrice": 719404,
+        "salesCount": 33
+      },
+      {
+        "name": "Kingston Hill",
+        "avgPrice": 776386,
+        "salesCount": 32
+      },
+      {
+        "name": "Penrhyn Road",
+        "avgPrice": 833369,
+        "salesCount": 20
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Portsmouth Road",
+        "postcode": "KT1 1AU",
+        "price": 569825,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 High Street",
+        "postcode": "KT1 3AE",
+        "price": 747895,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Clarence Street",
+        "postcode": "KT1 8AS",
+        "price": 534211,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Portsmouth Road",
+        "postcode": "KT1 8AR",
+        "price": 925965,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Kingston Hill",
+        "postcode": "KT1 4AB",
+        "price": 783509,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Penrhyn Road",
+        "postcode": "KT1 6AS",
+        "price": 584070,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Clarence Street",
+        "postcode": "KT1 3AX",
+        "price": 1353334,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 High Street",
+        "postcode": "KT1 3AT",
+        "price": 982948,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "cr0",
+    "name": "Croydon Central",
+    "region": "South London",
+    "town": "Croydon",
+    "county": "Greater London",
+    "avgPrice": 406669,
+    "medianPrice": 382269,
+    "totalSales": 1105,
+    "yoyGrowth": 2.2,
+    "threeYearGrowth": 6.2,
+    "propertyTypes": {
+      "detached": {
+        "avg": 712250,
+        "count": 133,
+        "pct": 12
+      },
+      "semi": {
+        "avg": 519750,
+        "count": 186,
+        "pct": 17
+      },
+      "terraced": {
+        "avg": 404250,
+        "count": 212,
+        "pct": 19
+      },
+      "flat": {
+        "avg": 300300,
+        "count": 575,
+        "pct": 52
+      }
+    },
+    "topStreets": [
+      {
+        "name": "George Street",
+        "avgPrice": 345669,
+        "salesCount": 31
+      },
+      {
+        "name": "Addiscombe Road",
+        "avgPrice": 378202,
+        "salesCount": 37
+      },
+      {
+        "name": "Lower Addiscombe Road",
+        "avgPrice": 410736,
+        "salesCount": 27
+      },
+      {
+        "name": "London Road",
+        "avgPrice": 443269,
+        "salesCount": 29
+      },
+      {
+        "name": "Park Lane",
+        "avgPrice": 475803,
+        "salesCount": 13
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 George Street",
+        "postcode": "CR0 7AX",
+        "price": 325335,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Addiscombe Road",
+        "postcode": "CR0 4AP",
+        "price": 427002,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Lower Addiscombe Road",
+        "postcode": "CR0 5AF",
+        "price": 305002,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 George Street",
+        "postcode": "CR0 5AM",
+        "price": 528670,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 London Road",
+        "postcode": "CR0 2AP",
+        "price": 447336,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Park Lane",
+        "postcode": "CR0 4AK",
+        "price": 333469,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Lower Addiscombe Road",
+        "postcode": "CR0 5AL",
+        "price": 772671,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Addiscombe Road",
+        "postcode": "CR0 4AB",
+        "price": 561203,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "br1",
+    "name": "Bromley Town",
+    "region": "South East London",
+    "town": "Bromley",
+    "county": "Greater London",
+    "avgPrice": 550992,
+    "medianPrice": 517932,
+    "totalSales": 1085,
+    "yoyGrowth": 3.6,
+    "threeYearGrowth": 10.1,
+    "propertyTypes": {
+      "detached": {
+        "avg": 915750,
+        "count": 157,
+        "pct": 15
+      },
+      "semi": {
+        "avg": 668250,
+        "count": 220,
+        "pct": 20
+      },
+      "terraced": {
+        "avg": 519750,
+        "count": 252,
+        "pct": 23
+      },
+      "flat": {
+        "avg": 386100,
+        "count": 456,
+        "pct": 42
+      }
+    },
+    "topStreets": [
+      {
+        "name": "High Street",
+        "avgPrice": 468343,
+        "salesCount": 30
+      },
+      {
+        "name": "Widmore Road",
+        "avgPrice": 512423,
+        "salesCount": 28
+      },
+      {
+        "name": "Masons Hill",
+        "avgPrice": 556502,
+        "salesCount": 23
+      },
+      {
+        "name": "Bickley Road",
+        "avgPrice": 600581,
+        "salesCount": 36
+      },
+      {
+        "name": "London Lane",
+        "avgPrice": 644661,
+        "salesCount": 38
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 High Street",
+        "postcode": "BR1 1AI",
+        "price": 440794,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Widmore Road",
+        "postcode": "BR1 7AC",
+        "price": 578542,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Masons Hill",
+        "postcode": "BR1 8AX",
+        "price": 413244,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 High Street",
+        "postcode": "BR1 5AW",
+        "price": 716290,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Bickley Road",
+        "postcode": "BR1 2AW",
+        "price": 606091,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 London Lane",
+        "postcode": "BR1 3AT",
+        "price": 451813,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Masons Hill",
+        "postcode": "BR1 1AO",
+        "price": 1046885,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Widmore Road",
+        "postcode": "BR1 7AT",
+        "price": 760369,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "en1",
+    "name": "Enfield Central",
+    "region": "North London",
+    "town": "Enfield",
+    "county": "Greater London",
+    "avgPrice": 547964,
+    "medianPrice": 515086,
+    "totalSales": 1103,
+    "yoyGrowth": 2.7,
+    "threeYearGrowth": 7.6,
+    "propertyTypes": {
+      "detached": {
+        "avg": 878750,
+        "count": 179,
+        "pct": 16
+      },
+      "semi": {
+        "avg": 641250,
+        "count": 251,
+        "pct": 23
+      },
+      "terraced": {
+        "avg": 498750,
+        "count": 287,
+        "pct": 26
+      },
+      "flat": {
+        "avg": 370500,
+        "count": 386,
+        "pct": 35
+      }
+    },
+    "topStreets": [
+      {
+        "name": "London Road",
+        "avgPrice": 465769,
+        "salesCount": 38
+      },
+      {
+        "name": "Southbury Road",
+        "avgPrice": 509607,
+        "salesCount": 15
+      },
+      {
+        "name": "Willow Road",
+        "avgPrice": 553444,
+        "salesCount": 18
+      },
+      {
+        "name": "Church Street",
+        "avgPrice": 597281,
+        "salesCount": 36
+      },
+      {
+        "name": "Baker Street",
+        "avgPrice": 641118,
+        "salesCount": 20
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 London Road",
+        "postcode": "EN1 7AL",
+        "price": 438371,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Southbury Road",
+        "postcode": "EN1 1AY",
+        "price": 575362,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Willow Road",
+        "postcode": "EN1 8AH",
+        "price": 410973,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 London Road",
+        "postcode": "EN1 6AL",
+        "price": 712353,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Church Street",
+        "postcode": "EN1 7AH",
+        "price": 602760,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Baker Street",
+        "postcode": "EN1 7AT",
+        "price": 449330,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Willow Road",
+        "postcode": "EN1 5AL",
+        "price": 1041132,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Southbury Road",
+        "postcode": "EN1 3AY",
+        "price": 756190,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "ha1",
+    "name": "Harrow on the Hill",
+    "region": "North West London",
+    "town": "Harrow",
+    "county": "Greater London",
+    "avgPrice": 550050,
+    "medianPrice": 517047,
+    "totalSales": 1041,
+    "yoyGrowth": 3,
+    "threeYearGrowth": 8.4,
+    "propertyTypes": {
+      "detached": {
+        "avg": 943500,
+        "count": 135,
+        "pct": 13
+      },
+      "semi": {
+        "avg": 688500,
+        "count": 189,
+        "pct": 18
+      },
+      "terraced": {
+        "avg": 535500,
+        "count": 217,
+        "pct": 21
+      },
+      "flat": {
+        "avg": 397800,
+        "count": 500,
+        "pct": 48
+      }
+    },
+    "topStreets": [
+      {
+        "name": "High Street",
+        "avgPrice": 467543,
+        "salesCount": 21
+      },
+      {
+        "name": "Station Road",
+        "avgPrice": 511546,
+        "salesCount": 13
+      },
+      {
+        "name": "Peterborough Road",
+        "avgPrice": 555551,
+        "salesCount": 16
+      },
+      {
+        "name": "London Road",
+        "avgPrice": 599554,
+        "salesCount": 31
+      },
+      {
+        "name": "Greenford Road",
+        "avgPrice": 643559,
+        "salesCount": 20
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 High Street",
+        "postcode": "HA1 1AS",
+        "price": 440040,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Station Road",
+        "postcode": "HA1 7AD",
+        "price": 577553,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Peterborough Road",
+        "postcode": "HA1 6AX",
+        "price": 412538,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 High Street",
+        "postcode": "HA1 4AP",
+        "price": 715065,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 London Road",
+        "postcode": "HA1 3AL",
+        "price": 605055,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Greenford Road",
+        "postcode": "HA1 5AW",
+        "price": 451041,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Peterborough Road",
+        "postcode": "HA1 5AS",
+        "price": 1045095,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Station Road",
+        "postcode": "HA1 6AY",
+        "price": 759069,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "ox1",
+    "name": "Oxford City Centre & Grandpont",
+    "region": "South East",
+    "town": "Oxford",
+    "county": "Oxfordshire",
+    "avgPrice": 640914,
+    "medianPrice": 602459,
+    "totalSales": 708,
+    "yoyGrowth": 4.8,
+    "threeYearGrowth": 13.4,
+    "propertyTypes": {
+      "detached": {
+        "avg": 1082250,
+        "count": 97,
+        "pct": 14
+      },
+      "semi": {
+        "avg": 789750,
+        "count": 136,
+        "pct": 19
+      },
+      "terraced": {
+        "avg": 614250,
+        "count": 156,
+        "pct": 22
+      },
+      "flat": {
+        "avg": 456300,
+        "count": 319,
+        "pct": 45
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Banbury Road",
+        "avgPrice": 544777,
+        "salesCount": 33
+      },
+      {
+        "name": "Woodstock Road",
+        "avgPrice": 596050,
+        "salesCount": 32
+      },
+      {
+        "name": "Iffley Road",
+        "avgPrice": 647323,
+        "salesCount": 24
+      },
+      {
+        "name": "Abingdon Road",
+        "avgPrice": 698596,
+        "salesCount": 38
+      },
+      {
+        "name": "Cowley Road",
+        "avgPrice": 749869,
+        "salesCount": 14
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Banbury Road",
+        "postcode": "OX1 1AO",
+        "price": 512731,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Woodstock Road",
+        "postcode": "OX1 7AW",
+        "price": 672960,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Iffley Road",
+        "postcode": "OX1 6AA",
+        "price": 480686,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Banbury Road",
+        "postcode": "OX1 4AX",
+        "price": 833188,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Abingdon Road",
+        "postcode": "OX1 3AD",
+        "price": 705005,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Cowley Road",
+        "postcode": "OX1 8AL",
+        "price": 525549,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Iffley Road",
+        "postcode": "OX1 3AA",
+        "price": 1217737,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Woodstock Road",
+        "postcode": "OX1 1AN",
+        "price": 884461,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "cb1",
+    "name": "Cambridge Central & Station",
+    "region": "East of England",
+    "town": "Cambridge",
+    "county": "Cambridgeshire",
+    "avgPrice": 604430,
+    "medianPrice": 568164,
+    "totalSales": 514,
+    "yoyGrowth": 5.1,
+    "threeYearGrowth": 14.3,
+    "propertyTypes": {
+      "detached": {
+        "avg": 1036000,
+        "count": 67,
+        "pct": 13
+      },
+      "semi": {
+        "avg": 756000,
+        "count": 94,
+        "pct": 18
+      },
+      "terraced": {
+        "avg": 588000,
+        "count": 107,
+        "pct": 21
+      },
+      "flat": {
+        "avg": 436800,
+        "count": 247,
+        "pct": 48
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Hills Road",
+        "avgPrice": 513766,
+        "salesCount": 31
+      },
+      {
+        "name": "Mill Road",
+        "avgPrice": 562120,
+        "salesCount": 21
+      },
+      {
+        "name": "Station Road",
+        "avgPrice": 610474,
+        "salesCount": 39
+      },
+      {
+        "name": "Cherry Hinton Road",
+        "avgPrice": 658829,
+        "salesCount": 24
+      },
+      {
+        "name": "Tenison Road",
+        "avgPrice": 707183,
+        "salesCount": 23
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Hills Road",
+        "postcode": "CB1 4AT",
+        "price": 483544,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Mill Road",
+        "postcode": "CB1 5AG",
+        "price": 634652,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Station Road",
+        "postcode": "CB1 8AB",
+        "price": 453323,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Hills Road",
+        "postcode": "CB1 7AT",
+        "price": 785759,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Cherry Hinton Road",
+        "postcode": "CB1 6AE",
+        "price": 664873,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Tenison Road",
+        "postcode": "CB1 7AD",
+        "price": 495633,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Station Road",
+        "postcode": "CB1 5AL",
+        "price": 1148417,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Mill Road",
+        "postcode": "CB1 8AB",
+        "price": 834113,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "bn1",
+    "name": "Brighton Central & Preston",
+    "region": "South East",
+    "town": "Brighton",
+    "county": "East Sussex",
+    "avgPrice": 480091,
+    "medianPrice": 451286,
+    "totalSales": 762,
+    "yoyGrowth": 3.4,
+    "threeYearGrowth": 9.5,
+    "propertyTypes": {
+      "detached": {
+        "avg": 869500,
+        "count": 80,
+        "pct": 11
+      },
+      "semi": {
+        "avg": 634500,
+        "count": 112,
+        "pct": 15
+      },
+      "terraced": {
+        "avg": 493500,
+        "count": 128,
+        "pct": 17
+      },
+      "flat": {
+        "avg": 366600,
+        "count": 442,
+        "pct": 58
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Ditchling Road",
+        "avgPrice": 408077,
+        "salesCount": 12
+      },
+      {
+        "name": "London Road",
+        "avgPrice": 446485,
+        "salesCount": 33
+      },
+      {
+        "name": "Dyke Road",
+        "avgPrice": 484892,
+        "salesCount": 28
+      },
+      {
+        "name": "Preston Road",
+        "avgPrice": 523299,
+        "salesCount": 31
+      },
+      {
+        "name": "Lewes Road",
+        "avgPrice": 561706,
+        "salesCount": 36
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Ditchling Road",
+        "postcode": "BN1 1AF",
+        "price": 384073,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 London Road",
+        "postcode": "BN1 7AO",
+        "price": 504096,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Dyke Road",
+        "postcode": "BN1 8AF",
+        "price": 360068,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Ditchling Road",
+        "postcode": "BN1 6AY",
+        "price": 624118,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Preston Road",
+        "postcode": "BN1 5AK",
+        "price": 528100,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Lewes Road",
+        "postcode": "BN1 6AZ",
+        "price": 393675,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Dyke Road",
+        "postcode": "BN1 1AD",
+        "price": 912173,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 London Road",
+        "postcode": "BN1 6AF",
+        "price": 662526,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "rg1",
+    "name": "Reading Town Centre",
+    "region": "South East",
+    "town": "Reading",
+    "county": "Berkshire",
+    "avgPrice": 354411,
+    "medianPrice": 333146,
+    "totalSales": 1141,
+    "yoyGrowth": 4.1,
+    "threeYearGrowth": 11.5,
+    "propertyTypes": {
+      "detached": {
+        "avg": 656750,
+        "count": 108,
+        "pct": 10
+      },
+      "semi": {
+        "avg": 479250,
+        "count": 152,
+        "pct": 13
+      },
+      "terraced": {
+        "avg": 372750,
+        "count": 173,
+        "pct": 15
+      },
+      "flat": {
+        "avg": 276900,
+        "count": 707,
+        "pct": 62
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Kings Road",
+        "avgPrice": 301249,
+        "salesCount": 36
+      },
+      {
+        "name": "Oxford Road",
+        "avgPrice": 329602,
+        "salesCount": 17
+      },
+      {
+        "name": "London Road",
+        "avgPrice": 357955,
+        "salesCount": 28
+      },
+      {
+        "name": "Forbury Road",
+        "avgPrice": 386308,
+        "salesCount": 17
+      },
+      {
+        "name": "Caversham Road",
+        "avgPrice": 414661,
+        "salesCount": 21
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Kings Road",
+        "postcode": "RG1 8AJ",
+        "price": 283529,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Oxford Road",
+        "postcode": "RG1 9AV",
+        "price": 372132,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A London Road",
+        "postcode": "RG1 9AQ",
+        "price": 265808,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Kings Road",
+        "postcode": "RG1 4AQ",
+        "price": 460734,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Forbury Road",
+        "postcode": "RG1 9AA",
+        "price": 389852,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Caversham Road",
+        "postcode": "RG1 8AC",
+        "price": 290617,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 London Road",
+        "postcode": "RG1 3AO",
+        "price": 673381,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Oxford Road",
+        "postcode": "RG1 1AF",
+        "price": 489087,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "so14",
+    "name": "Southampton Waterfront & City",
+    "region": "South East",
+    "town": "Southampton",
+    "county": "Hampshire",
+    "avgPrice": 230585,
+    "medianPrice": 216750,
+    "totalSales": 559,
+    "yoyGrowth": 2.9,
+    "threeYearGrowth": 8.1,
+    "propertyTypes": {
+      "detached": {
+        "avg": 453250,
+        "count": 39,
+        "pct": 7
+      },
+      "semi": {
+        "avg": 330750,
+        "count": 55,
+        "pct": 10
+      },
+      "terraced": {
+        "avg": 257250,
+        "count": 63,
+        "pct": 11
+      },
+      "flat": {
+        "avg": 191100,
+        "count": 402,
+        "pct": 72
+      }
+    },
+    "topStreets": [
+      {
+        "name": "High Street",
+        "avgPrice": 195997,
+        "salesCount": 21
+      },
+      {
+        "name": "Canute Road",
+        "avgPrice": 214444,
+        "salesCount": 21
+      },
+      {
+        "name": "Ocean Way",
+        "avgPrice": 232891,
+        "salesCount": 27
+      },
+      {
+        "name": "Above Bar Street",
+        "avgPrice": 251338,
+        "salesCount": 38
+      },
+      {
+        "name": "St Mary Street",
+        "avgPrice": 269784,
+        "salesCount": 18
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 High Street",
+        "postcode": "SO14 7AQ",
+        "price": 184468,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Canute Road",
+        "postcode": "SO14 4AI",
+        "price": 242114,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Ocean Way",
+        "postcode": "SO14 1AW",
+        "price": 172939,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 High Street",
+        "postcode": "SO14 6AB",
+        "price": 299761,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Above Bar Street",
+        "postcode": "SO14 2AE",
+        "price": 253644,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 St Mary Street",
+        "postcode": "SO14 6AJ",
+        "price": 189080,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Ocean Way",
+        "postcode": "SO14 7AX",
+        "price": 438112,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Canute Road",
+        "postcode": "SO14 3AW",
+        "price": 318207,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "po1",
+    "name": "Portsmouth Historic Dockyard & City",
+    "region": "South East",
+    "town": "Portsmouth",
+    "county": "Hampshire",
+    "avgPrice": 230635,
+    "medianPrice": 216797,
+    "totalSales": 1164,
+    "yoyGrowth": 3.1,
+    "threeYearGrowth": 8.7,
+    "propertyTypes": {
+      "detached": {
+        "avg": 434750,
+        "count": 102,
+        "pct": 9
+      },
+      "semi": {
+        "avg": 317250,
+        "count": 143,
+        "pct": 12
+      },
+      "terraced": {
+        "avg": 246750,
+        "count": 163,
+        "pct": 14
+      },
+      "flat": {
+        "avg": 183300,
+        "count": 757,
+        "pct": 65
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Commercial Road",
+        "avgPrice": 196040,
+        "salesCount": 16
+      },
+      {
+        "name": "Queen Street",
+        "avgPrice": 214491,
+        "salesCount": 13
+      },
+      {
+        "name": "St George's Square",
+        "avgPrice": 232941,
+        "salesCount": 36
+      },
+      {
+        "name": "Gunwharf Road",
+        "avgPrice": 251392,
+        "salesCount": 28
+      },
+      {
+        "name": "Kingston Crescent",
+        "avgPrice": 269843,
+        "salesCount": 39
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Commercial Road",
+        "postcode": "PO1 1AM",
+        "price": 184508,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Queen Street",
+        "postcode": "PO1 8AO",
+        "price": 242167,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A St George's Square",
+        "postcode": "PO1 6AE",
+        "price": 172976,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Commercial Road",
+        "postcode": "PO1 2AP",
+        "price": 299826,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Gunwharf Road",
+        "postcode": "PO1 2AJ",
+        "price": 253699,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Kingston Crescent",
+        "postcode": "PO1 2AM",
+        "price": 189121,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 St George's Square",
+        "postcode": "PO1 9AH",
+        "price": 438207,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Queen Street",
+        "postcode": "PO1 9AG",
+        "price": 318276,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "b1",
+    "name": "Birmingham City Centre & Jewellery Qtr",
+    "region": "West Midlands",
+    "town": "Birmingham",
+    "county": "West Midlands",
+    "avgPrice": 208218,
+    "medianPrice": 195725,
+    "totalSales": 464,
+    "yoyGrowth": 4.6,
+    "threeYearGrowth": 12.9,
+    "propertyTypes": {
+      "detached": {
+        "avg": 453250,
+        "count": 14,
+        "pct": 3
+      },
+      "semi": {
+        "avg": 330750,
+        "count": 19,
+        "pct": 4
+      },
+      "terraced": {
+        "avg": 257250,
+        "count": 25,
+        "pct": 5
+      },
+      "flat": {
+        "avg": 191100,
+        "count": 408,
+        "pct": 88
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Broad Street",
+        "avgPrice": 176985,
+        "salesCount": 24
+      },
+      {
+        "name": "Colmore Row",
+        "avgPrice": 193643,
+        "salesCount": 14
+      },
+      {
+        "name": "Holloway Head",
+        "avgPrice": 210300,
+        "salesCount": 21
+      },
+      {
+        "name": "Great Charles Street",
+        "avgPrice": 226958,
+        "salesCount": 25
+      },
+      {
+        "name": "Navigation Street",
+        "avgPrice": 243615,
+        "salesCount": 31
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Broad Street",
+        "postcode": "B1 4AC",
+        "price": 166574,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Colmore Row",
+        "postcode": "B1 4AY",
+        "price": 218629,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Holloway Head",
+        "postcode": "B1 4AM",
+        "price": 156164,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Broad Street",
+        "postcode": "B1 8AH",
+        "price": 270683,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Great Charles Street",
+        "postcode": "B1 7AX",
+        "price": 229040,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Navigation Street",
+        "postcode": "B1 4AY",
+        "price": 170739,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Holloway Head",
+        "postcode": "B1 7AS",
+        "price": 395614,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Colmore Row",
+        "postcode": "B1 6AD",
+        "price": 287341,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "b15",
+    "name": "Edgbaston",
+    "region": "West Midlands",
+    "town": "Birmingham",
+    "county": "West Midlands",
+    "avgPrice": 472734,
+    "medianPrice": 444370,
+    "totalSales": 538,
+    "yoyGrowth": 3.7,
+    "threeYearGrowth": 10.4,
+    "propertyTypes": {
+      "detached": {
+        "avg": 777000,
+        "count": 81,
+        "pct": 15
+      },
+      "semi": {
+        "avg": 567000,
+        "count": 113,
+        "pct": 21
+      },
+      "terraced": {
+        "avg": 441000,
+        "count": 129,
+        "pct": 24
+      },
+      "flat": {
+        "avg": 327600,
+        "count": 215,
+        "pct": 40
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Hagley Road",
+        "avgPrice": 401824,
+        "salesCount": 18
+      },
+      {
+        "name": "Harborne Road",
+        "avgPrice": 439643,
+        "salesCount": 33
+      },
+      {
+        "name": "Bristol Road",
+        "avgPrice": 477461,
+        "salesCount": 30
+      },
+      {
+        "name": "Priory Road",
+        "avgPrice": 515280,
+        "salesCount": 39
+      },
+      {
+        "name": "Calthorpe Road",
+        "avgPrice": 553099,
+        "salesCount": 22
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Hagley Road",
+        "postcode": "B15 8AX",
+        "price": 378187,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Harborne Road",
+        "postcode": "B15 7AJ",
+        "price": 496371,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Bristol Road",
+        "postcode": "B15 2AU",
+        "price": 354551,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Hagley Road",
+        "postcode": "B15 5AJ",
+        "price": 614554,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Priory Road",
+        "postcode": "B15 3AH",
+        "price": 520007,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Calthorpe Road",
+        "postcode": "B15 5AQ",
+        "price": 387642,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Bristol Road",
+        "postcode": "B15 1AK",
+        "price": 898195,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Harborne Road",
+        "postcode": "B15 1AI",
+        "price": 652373,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "cv1",
+    "name": "Coventry City Centre",
+    "region": "West Midlands",
+    "town": "Coventry",
+    "county": "West Midlands",
+    "avgPrice": 188058,
+    "medianPrice": 176775,
+    "totalSales": 835,
+    "yoyGrowth": 3.2,
+    "threeYearGrowth": 9,
+    "propertyTypes": {
+      "detached": {
+        "avg": 360750,
+        "count": 67,
+        "pct": 8
+      },
+      "semi": {
+        "avg": 263250,
+        "count": 94,
+        "pct": 11
+      },
+      "terraced": {
+        "avg": 204750,
+        "count": 107,
+        "pct": 13
+      },
+      "flat": {
+        "avg": 152100,
+        "count": 568,
+        "pct": 68
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Warwick Road",
+        "avgPrice": 159849,
+        "salesCount": 21
+      },
+      {
+        "name": "Corporation Street",
+        "avgPrice": 174894,
+        "salesCount": 17
+      },
+      {
+        "name": "Gosford Street",
+        "avgPrice": 189939,
+        "salesCount": 15
+      },
+      {
+        "name": "Hales Street",
+        "avgPrice": 204983,
+        "salesCount": 24
+      },
+      {
+        "name": "Foleshill Road",
+        "avgPrice": 220028,
+        "salesCount": 36
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Warwick Road",
+        "postcode": "CV1 5AN",
+        "price": 150446,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Corporation Street",
+        "postcode": "CV1 3AC",
+        "price": 197461,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Gosford Street",
+        "postcode": "CV1 1AZ",
+        "price": 141044,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Warwick Road",
+        "postcode": "CV1 4AG",
+        "price": 244475,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Hales Street",
+        "postcode": "CV1 1AH",
+        "price": 206864,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Foleshill Road",
+        "postcode": "CV1 3AM",
+        "price": 154208,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Gosford Street",
+        "postcode": "CV1 1AZ",
+        "price": 357310,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Corporation Street",
+        "postcode": "CV1 8AT",
+        "price": 259520,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "ng1",
+    "name": "Nottingham City Centre & Lace Market",
+    "region": "East Midlands",
+    "town": "Nottingham",
+    "county": "Nottinghamshire",
+    "avgPrice": 182838,
+    "medianPrice": 171868,
+    "totalSales": 882,
+    "yoyGrowth": 3.8,
+    "threeYearGrowth": 10.6,
+    "propertyTypes": {
+      "detached": {
+        "avg": 366300,
+        "count": 55,
+        "pct": 6
+      },
+      "semi": {
+        "avg": 267300,
+        "count": 77,
+        "pct": 9
+      },
+      "terraced": {
+        "avg": 207900,
+        "count": 88,
+        "pct": 10
+      },
+      "flat": {
+        "avg": 154440,
+        "count": 662,
+        "pct": 75
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Mansfield Road",
+        "avgPrice": 155412,
+        "salesCount": 24
+      },
+      {
+        "name": "Canal Street",
+        "avgPrice": 170039,
+        "salesCount": 21
+      },
+      {
+        "name": "Stoney Street",
+        "avgPrice": 184666,
+        "salesCount": 27
+      },
+      {
+        "name": "Derby Road",
+        "avgPrice": 199293,
+        "salesCount": 37
+      },
+      {
+        "name": "Huntingdon Street",
+        "avgPrice": 213920,
+        "salesCount": 35
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Mansfield Road",
+        "postcode": "NG1 1AT",
+        "price": 146270,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Canal Street",
+        "postcode": "NG1 9AA",
+        "price": 191980,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Stoney Street",
+        "postcode": "NG1 8AH",
+        "price": 137129,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Mansfield Road",
+        "postcode": "NG1 2AF",
+        "price": 237689,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Derby Road",
+        "postcode": "NG1 7AC",
+        "price": 201122,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Huntingdon Street",
+        "postcode": "NG1 1AZ",
+        "price": 149927,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Stoney Street",
+        "postcode": "NG1 7AV",
+        "price": 347392,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Canal Street",
+        "postcode": "NG1 1AW",
+        "price": 252316,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "le1",
+    "name": "Leicester City Centre",
+    "region": "East Midlands",
+    "town": "Leicester",
+    "county": "Leicestershire",
+    "avgPrice": 176149,
+    "medianPrice": 165580,
+    "totalSales": 913,
+    "yoyGrowth": 3,
+    "threeYearGrowth": 8.4,
+    "propertyTypes": {
+      "detached": {
+        "avg": 342250,
+        "count": 68,
+        "pct": 8
+      },
+      "semi": {
+        "avg": 249750,
+        "count": 96,
+        "pct": 11
+      },
+      "terraced": {
+        "avg": 194250,
+        "count": 110,
+        "pct": 12
+      },
+      "flat": {
+        "avg": 144300,
+        "count": 639,
+        "pct": 70
+      }
+    },
+    "topStreets": [
+      {
+        "name": "London Road",
+        "avgPrice": 149727,
+        "salesCount": 29
+      },
+      {
+        "name": "Charles Street",
+        "avgPrice": 163819,
+        "salesCount": 23
+      },
+      {
+        "name": "Granby Street",
+        "avgPrice": 177910,
+        "salesCount": 15
+      },
+      {
+        "name": "Humberstone Gate",
+        "avgPrice": 192002,
+        "salesCount": 31
+      },
+      {
+        "name": "Belgrave Gate",
+        "avgPrice": 206094,
+        "salesCount": 23
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 London Road",
+        "postcode": "LE1 1AR",
+        "price": 140919,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Charles Street",
+        "postcode": "LE1 3AI",
+        "price": 184956,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Granby Street",
+        "postcode": "LE1 8AH",
+        "price": 132112,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 London Road",
+        "postcode": "LE1 5AA",
+        "price": 228994,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Humberstone Gate",
+        "postcode": "LE1 7AF",
+        "price": 193764,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Belgrave Gate",
+        "postcode": "LE1 3AG",
+        "price": 144442,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Granby Street",
+        "postcode": "LE1 8AI",
+        "price": 334683,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Charles Street",
+        "postcode": "LE1 9AI",
+        "price": 243086,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "m1",
+    "name": "Manchester Piccadilly & Northern Quarter",
+    "region": "North West",
+    "town": "Manchester",
+    "county": "Greater Manchester",
+    "avgPrice": 218680,
+    "medianPrice": 205559,
+    "totalSales": 825,
+    "yoyGrowth": 5.4,
+    "threeYearGrowth": 15.1,
+    "propertyTypes": {
+      "detached": {
+        "avg": 490250,
+        "count": 16,
+        "pct": 2
+      },
+      "semi": {
+        "avg": 357750,
+        "count": 23,
+        "pct": 3
+      },
+      "terraced": {
+        "avg": 278250,
+        "count": 26,
+        "pct": 3
+      },
+      "flat": {
+        "avg": 206700,
+        "count": 759,
+        "pct": 92
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Whitworth Street",
+        "avgPrice": 185878,
+        "salesCount": 34
+      },
+      {
+        "name": "Dale Street",
+        "avgPrice": 203372,
+        "salesCount": 25
+      },
+      {
+        "name": "Portland Street",
+        "avgPrice": 220867,
+        "salesCount": 12
+      },
+      {
+        "name": "Newton Street",
+        "avgPrice": 238361,
+        "salesCount": 39
+      },
+      {
+        "name": "Princess Street",
+        "avgPrice": 255856,
+        "salesCount": 15
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Whitworth Street",
+        "postcode": "M1 2AI",
+        "price": 174944,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Dale Street",
+        "postcode": "M1 1AM",
+        "price": 229614,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Portland Street",
+        "postcode": "M1 3AR",
+        "price": 164010,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Whitworth Street",
+        "postcode": "M1 3AP",
+        "price": 284284,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Newton Street",
+        "postcode": "M1 1AB",
+        "price": 240548,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Princess Street",
+        "postcode": "M1 4AQ",
+        "price": 179318,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Portland Street",
+        "postcode": "M1 6AH",
+        "price": 415492,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Dale Street",
+        "postcode": "M1 1AT",
+        "price": 301778,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "m3",
+    "name": "Manchester Spinningfields & Salford",
+    "region": "North West",
+    "town": "Manchester",
+    "county": "Greater Manchester",
+    "avgPrice": 230211,
+    "medianPrice": 216398,
+    "totalSales": 577,
+    "yoyGrowth": 5.1,
+    "threeYearGrowth": 14.3,
+    "propertyTypes": {
+      "detached": {
+        "avg": 518000,
+        "count": 9,
+        "pct": 2
+      },
+      "semi": {
+        "avg": 378000,
+        "count": 15,
+        "pct": 2
+      },
+      "terraced": {
+        "avg": 294000,
+        "count": 25,
+        "pct": 2
+      },
+      "flat": {
+        "avg": 218400,
+        "count": 542,
+        "pct": 94
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Deansgate",
+        "avgPrice": 195679,
+        "salesCount": 18
+      },
+      {
+        "name": "Blackfriars Road",
+        "avgPrice": 214096,
+        "salesCount": 27
+      },
+      {
+        "name": "New Bailey Street",
+        "avgPrice": 232513,
+        "salesCount": 39
+      },
+      {
+        "name": "Trinity Way",
+        "avgPrice": 250930,
+        "salesCount": 20
+      },
+      {
+        "name": "Chapel Street",
+        "avgPrice": 269347,
+        "salesCount": 28
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Deansgate",
+        "postcode": "M3 9AN",
+        "price": 184169,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Blackfriars Road",
+        "postcode": "M3 5AY",
+        "price": 241722,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A New Bailey Street",
+        "postcode": "M3 4AJ",
+        "price": 172658,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Deansgate",
+        "postcode": "M3 6AJ",
+        "price": 299274,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Trinity Way",
+        "postcode": "M3 1AU",
+        "price": 253232,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Chapel Street",
+        "postcode": "M3 2AO",
+        "price": 188773,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 New Bailey Street",
+        "postcode": "M3 8AM",
+        "price": 437401,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Blackfriars Road",
+        "postcode": "M3 5AK",
+        "price": 317691,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "m20",
+    "name": "Didsbury & Withington",
+    "region": "North West",
+    "town": "Manchester",
+    "county": "Greater Manchester",
+    "avgPrice": 455667,
+    "medianPrice": 428327,
+    "totalSales": 709,
+    "yoyGrowth": 4.8,
+    "threeYearGrowth": 13.4,
+    "propertyTypes": {
+      "detached": {
+        "avg": 730750,
+        "count": 115,
+        "pct": 16
+      },
+      "semi": {
+        "avg": 533250,
+        "count": 161,
+        "pct": 23
+      },
+      "terraced": {
+        "avg": 414750,
+        "count": 184,
+        "pct": 26
+      },
+      "flat": {
+        "avg": 308100,
+        "count": 248,
+        "pct": 35
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Wilmslow Road",
+        "avgPrice": 387317,
+        "salesCount": 38
+      },
+      {
+        "name": "Palatine Road",
+        "avgPrice": 423770,
+        "salesCount": 14
+      },
+      {
+        "name": "Barlow Moor Road",
+        "avgPrice": 460224,
+        "salesCount": 17
+      },
+      {
+        "name": "Didsbury Park",
+        "avgPrice": 496677,
+        "salesCount": 37
+      },
+      {
+        "name": "Lapwing Lane",
+        "avgPrice": 533130,
+        "salesCount": 34
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Wilmslow Road",
+        "postcode": "M20 5AN",
+        "price": 364534,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Palatine Road",
+        "postcode": "M20 8AP",
+        "price": 478450,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Barlow Moor Road",
+        "postcode": "M20 1AA",
+        "price": 341750,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Wilmslow Road",
+        "postcode": "M20 8AP",
+        "price": 592367,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Didsbury Park",
+        "postcode": "M20 7AF",
+        "price": 501234,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Lapwing Lane",
+        "postcode": "M20 1AY",
+        "price": 373647,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Barlow Moor Road",
+        "postcode": "M20 8AV",
+        "price": 865767,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Palatine Road",
+        "postcode": "M20 5AP",
+        "price": 628820,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "l1",
+    "name": "Liverpool ONE & Waterfront",
+    "region": "North West",
+    "town": "Liverpool",
+    "county": "Merseyside",
+    "avgPrice": 150548,
+    "medianPrice": 141515,
+    "totalSales": 1030,
+    "yoyGrowth": 4.2,
+    "threeYearGrowth": 11.8,
+    "propertyTypes": {
+      "detached": {
+        "avg": 323750,
+        "count": 36,
+        "pct": 4
+      },
+      "semi": {
+        "avg": 236250,
+        "count": 50,
+        "pct": 5
+      },
+      "terraced": {
+        "avg": 183750,
+        "count": 58,
+        "pct": 6
+      },
+      "flat": {
+        "avg": 136500,
+        "count": 886,
+        "pct": 86
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Strand Street",
+        "avgPrice": 127966,
+        "salesCount": 38
+      },
+      {
+        "name": "Hanover Street",
+        "avgPrice": 140010,
+        "salesCount": 23
+      },
+      {
+        "name": "Duke Street",
+        "avgPrice": 152053,
+        "salesCount": 30
+      },
+      {
+        "name": "Seel Street",
+        "avgPrice": 164097,
+        "salesCount": 30
+      },
+      {
+        "name": "Bold Street",
+        "avgPrice": 176141,
+        "salesCount": 20
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Strand Street",
+        "postcode": "L1 5AS",
+        "price": 120438,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Hanover Street",
+        "postcode": "L1 9AE",
+        "price": 158075,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Duke Street",
+        "postcode": "L1 6AL",
+        "price": 112911,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Strand Street",
+        "postcode": "L1 3AC",
+        "price": 195712,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Seel Street",
+        "postcode": "L1 4AB",
+        "price": 165603,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Bold Street",
+        "postcode": "L1 6AS",
+        "price": 123449,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Duke Street",
+        "postcode": "L1 5AI",
+        "price": 286041,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Hanover Street",
+        "postcode": "L1 6AW",
+        "price": 207756,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "l3",
+    "name": "Liverpool Waterfront & Vauxhall",
+    "region": "North West",
+    "town": "Liverpool",
+    "county": "Merseyside",
+    "avgPrice": 161228,
+    "medianPrice": 151554,
+    "totalSales": 643,
+    "yoyGrowth": 3.9,
+    "threeYearGrowth": 10.9,
+    "propertyTypes": {
+      "detached": {
+        "avg": 351500,
+        "count": 19,
+        "pct": 3
+      },
+      "semi": {
+        "avg": 256500,
+        "count": 27,
+        "pct": 4
+      },
+      "terraced": {
+        "avg": 199500,
+        "count": 31,
+        "pct": 5
+      },
+      "flat": {
+        "avg": 148200,
+        "count": 566,
+        "pct": 88
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Waterloo Road",
+        "avgPrice": 137044,
+        "salesCount": 22
+      },
+      {
+        "name": "Princes Parade",
+        "avgPrice": 149942,
+        "salesCount": 21
+      },
+      {
+        "name": "Old Hall Street",
+        "avgPrice": 162840,
+        "salesCount": 36
+      },
+      {
+        "name": "Great Howard Street",
+        "avgPrice": 175739,
+        "salesCount": 15
+      },
+      {
+        "name": "Leeds Street",
+        "avgPrice": 188637,
+        "salesCount": 18
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Waterloo Road",
+        "postcode": "L3 3AA",
+        "price": 128982,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Princes Parade",
+        "postcode": "L3 9AS",
+        "price": 169289,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Old Hall Street",
+        "postcode": "L3 3AP",
+        "price": 120921,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Waterloo Road",
+        "postcode": "L3 8AF",
+        "price": 209596,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Great Howard Street",
+        "postcode": "L3 1AS",
+        "price": 177351,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Leeds Street",
+        "postcode": "L3 4AY",
+        "price": 132207,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Old Hall Street",
+        "postcode": "L3 6AY",
+        "price": 306333,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Princes Parade",
+        "postcode": "L3 3AK",
+        "price": 222495,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "ch1",
+    "name": "Chester City Centre",
+    "region": "North West",
+    "town": "Chester",
+    "county": "Cheshire",
+    "avgPrice": 318377,
+    "medianPrice": 299274,
+    "totalSales": 1043,
+    "yoyGrowth": 3.5,
+    "threeYearGrowth": 9.8,
+    "propertyTypes": {
+      "detached": {
+        "avg": 545750,
+        "count": 136,
+        "pct": 13
+      },
+      "semi": {
+        "avg": 398250,
+        "count": 190,
+        "pct": 18
+      },
+      "terraced": {
+        "avg": 309750,
+        "count": 217,
+        "pct": 21
+      },
+      "flat": {
+        "avg": 230100,
+        "count": 501,
+        "pct": 48
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Foregate Street",
+        "avgPrice": 270620,
+        "salesCount": 16
+      },
+      {
+        "name": "Watergate Street",
+        "avgPrice": 296091,
+        "salesCount": 33
+      },
+      {
+        "name": "City Road",
+        "avgPrice": 321561,
+        "salesCount": 24
+      },
+      {
+        "name": "Bridge Street",
+        "avgPrice": 347031,
+        "salesCount": 16
+      },
+      {
+        "name": "Northgate Street",
+        "avgPrice": 372501,
+        "salesCount": 30
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Foregate Street",
+        "postcode": "CH1 8AS",
+        "price": 254702,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Watergate Street",
+        "postcode": "CH1 6AL",
+        "price": 334296,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A City Road",
+        "postcode": "CH1 9AB",
+        "price": 238783,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Foregate Street",
+        "postcode": "CH1 1AR",
+        "price": 413890,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Bridge Street",
+        "postcode": "CH1 3AR",
+        "price": 350215,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Northgate Street",
+        "postcode": "CH1 7AK",
+        "price": 261069,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 City Road",
+        "postcode": "CH1 1AG",
+        "price": 604916,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Watergate Street",
+        "postcode": "CH1 8AO",
+        "price": 439360,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "ls1",
+    "name": "Leeds City Centre",
+    "region": "Yorkshire",
+    "town": "Leeds",
+    "county": "West Yorkshire",
+    "avgPrice": 180038,
+    "medianPrice": 169236,
+    "totalSales": 1040,
+    "yoyGrowth": 4.9,
+    "threeYearGrowth": 13.7,
+    "propertyTypes": {
+      "detached": {
+        "avg": 397750,
+        "count": 26,
+        "pct": 2
+      },
+      "semi": {
+        "avg": 290250,
+        "count": 36,
+        "pct": 3
+      },
+      "terraced": {
+        "avg": 225750,
+        "count": 42,
+        "pct": 4
+      },
+      "flat": {
+        "avg": 167700,
+        "count": 936,
+        "pct": 90
+      }
+    },
+    "topStreets": [
+      {
+        "name": "The Calls",
+        "avgPrice": 153032,
+        "salesCount": 39
+      },
+      {
+        "name": "Crown Point Road",
+        "avgPrice": 167435,
+        "salesCount": 14
+      },
+      {
+        "name": "Wellington Street",
+        "avgPrice": 181838,
+        "salesCount": 24
+      },
+      {
+        "name": "Neville Street",
+        "avgPrice": 196241,
+        "salesCount": 38
+      },
+      {
+        "name": "Dock Street",
+        "avgPrice": 210644,
+        "salesCount": 35
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 The Calls",
+        "postcode": "LS1 5AX",
+        "price": 144030,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Crown Point Road",
+        "postcode": "LS1 7AD",
+        "price": 189040,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Wellington Street",
+        "postcode": "LS1 2AX",
+        "price": 135029,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 The Calls",
+        "postcode": "LS1 4AQ",
+        "price": 234049,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Neville Street",
+        "postcode": "LS1 3AS",
+        "price": 198042,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Dock Street",
+        "postcode": "LS1 1AO",
+        "price": 147631,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Wellington Street",
+        "postcode": "LS1 4AL",
+        "price": 342072,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Crown Point Road",
+        "postcode": "LS1 8AX",
+        "price": 248452,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "ls6",
+    "name": "Headingley & Hyde Park",
+    "region": "Yorkshire",
+    "town": "Leeds",
+    "county": "West Yorkshire",
+    "avgPrice": 317308,
+    "medianPrice": 298270,
+    "totalSales": 978,
+    "yoyGrowth": 3.4,
+    "threeYearGrowth": 9.5,
+    "propertyTypes": {
+      "detached": {
+        "avg": 508750,
+        "count": 159,
+        "pct": 16
+      },
+      "semi": {
+        "avg": 371250,
+        "count": 222,
+        "pct": 23
+      },
+      "terraced": {
+        "avg": 288750,
+        "count": 254,
+        "pct": 26
+      },
+      "flat": {
+        "avg": 214500,
+        "count": 342,
+        "pct": 35
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Otley Road",
+        "avgPrice": 269712,
+        "salesCount": 19
+      },
+      {
+        "name": "Cardigan Road",
+        "avgPrice": 295096,
+        "salesCount": 25
+      },
+      {
+        "name": "Victoria Road",
+        "avgPrice": 320481,
+        "salesCount": 32
+      },
+      {
+        "name": "Headingley Lane",
+        "avgPrice": 345866,
+        "salesCount": 26
+      },
+      {
+        "name": "Woodhouse Lane",
+        "avgPrice": 371250,
+        "salesCount": 25
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Otley Road",
+        "postcode": "LS6 8AU",
+        "price": 253846,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Cardigan Road",
+        "postcode": "LS6 4AR",
+        "price": 333173,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Victoria Road",
+        "postcode": "LS6 8AC",
+        "price": 237981,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Otley Road",
+        "postcode": "LS6 9AT",
+        "price": 412500,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Headingley Lane",
+        "postcode": "LS6 3AT",
+        "price": 349039,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Woodhouse Lane",
+        "postcode": "LS6 9AX",
+        "price": 260193,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Victoria Road",
+        "postcode": "LS6 2AM",
+        "price": 602885,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Cardigan Road",
+        "postcode": "LS6 4AE",
+        "price": 437885,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "s1",
+    "name": "Sheffield City Centre",
+    "region": "Yorkshire",
+    "town": "Sheffield",
+    "county": "South Yorkshire",
+    "avgPrice": 143049,
+    "medianPrice": 134466,
+    "totalSales": 575,
+    "yoyGrowth": 3.6,
+    "threeYearGrowth": 10.1,
+    "propertyTypes": {
+      "detached": {
+        "avg": 305250,
+        "count": 22,
+        "pct": 4
+      },
+      "semi": {
+        "avg": 222750,
+        "count": 30,
+        "pct": 5
+      },
+      "terraced": {
+        "avg": 173250,
+        "count": 35,
+        "pct": 6
+      },
+      "flat": {
+        "avg": 128700,
+        "count": 489,
+        "pct": 85
+      }
+    },
+    "topStreets": [
+      {
+        "name": "West Street",
+        "avgPrice": 121592,
+        "salesCount": 18
+      },
+      {
+        "name": "Arundel Gate",
+        "avgPrice": 133036,
+        "salesCount": 36
+      },
+      {
+        "name": "Broad Lane",
+        "avgPrice": 144479,
+        "salesCount": 29
+      },
+      {
+        "name": "Moorfoot",
+        "avgPrice": 155923,
+        "salesCount": 31
+      },
+      {
+        "name": "Pinstone Street",
+        "avgPrice": 167367,
+        "salesCount": 14
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 West Street",
+        "postcode": "S1 3AQ",
+        "price": 114439,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Arundel Gate",
+        "postcode": "S1 5AB",
+        "price": 150201,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Broad Lane",
+        "postcode": "S1 7AO",
+        "price": 107287,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 West Street",
+        "postcode": "S1 7AK",
+        "price": 185964,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Moorfoot",
+        "postcode": "S1 9AA",
+        "price": 157354,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Pinstone Street",
+        "postcode": "S1 9AE",
+        "price": 117300,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Broad Lane",
+        "postcode": "S1 8AB",
+        "price": 271793,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Arundel Gate",
+        "postcode": "S1 7AW",
+        "price": 197408,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "yo1",
+    "name": "York City Walls & Shambles",
+    "region": "Yorkshire",
+    "town": "York",
+    "county": "North Yorkshire",
+    "avgPrice": 406726,
+    "medianPrice": 382322,
+    "totalSales": 939,
+    "yoyGrowth": 4.3,
+    "threeYearGrowth": 12,
+    "propertyTypes": {
+      "detached": {
+        "avg": 712250,
+        "count": 113,
+        "pct": 12
+      },
+      "semi": {
+        "avg": 519750,
+        "count": 158,
+        "pct": 17
+      },
+      "terraced": {
+        "avg": 404250,
+        "count": 180,
+        "pct": 19
+      },
+      "flat": {
+        "avg": 300300,
+        "count": 488,
+        "pct": 52
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Micklegate",
+        "avgPrice": 345717,
+        "salesCount": 39
+      },
+      {
+        "name": "Goodramgate",
+        "avgPrice": 378255,
+        "salesCount": 14
+      },
+      {
+        "name": "Walmgate",
+        "avgPrice": 410793,
+        "salesCount": 27
+      },
+      {
+        "name": "Piccadilly",
+        "avgPrice": 443331,
+        "salesCount": 34
+      },
+      {
+        "name": "Fossgate",
+        "avgPrice": 475869,
+        "salesCount": 15
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Micklegate",
+        "postcode": "YO1 3AX",
+        "price": 325381,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Goodramgate",
+        "postcode": "YO1 3AF",
+        "price": 427062,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Walmgate",
+        "postcode": "YO1 6AF",
+        "price": 305045,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Micklegate",
+        "postcode": "YO1 4AY",
+        "price": 528744,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Piccadilly",
+        "postcode": "YO1 6AT",
+        "price": 447399,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Fossgate",
+        "postcode": "YO1 8AP",
+        "price": 333515,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Walmgate",
+        "postcode": "YO1 9AH",
+        "price": 772779,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Goodramgate",
+        "postcode": "YO1 2AT",
+        "price": 561282,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "ne1",
+    "name": "Newcastle City Centre & Quayside",
+    "region": "North East",
+    "town": "Newcastle upon Tyne",
+    "county": "Tyne and Wear",
+    "avgPrice": 161256,
+    "medianPrice": 151581,
+    "totalSales": 732,
+    "yoyGrowth": 3.7,
+    "threeYearGrowth": 10.4,
+    "propertyTypes": {
+      "detached": {
+        "avg": 342250,
+        "count": 29,
+        "pct": 4
+      },
+      "semi": {
+        "avg": 249750,
+        "count": 41,
+        "pct": 6
+      },
+      "terraced": {
+        "avg": 194250,
+        "count": 47,
+        "pct": 6
+      },
+      "flat": {
+        "avg": 144300,
+        "count": 615,
+        "pct": 84
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Quayside",
+        "avgPrice": 137068,
+        "salesCount": 19
+      },
+      {
+        "name": "Grey Street",
+        "avgPrice": 149968,
+        "salesCount": 14
+      },
+      {
+        "name": "Grainger Street",
+        "avgPrice": 162869,
+        "salesCount": 13
+      },
+      {
+        "name": "Dean Street",
+        "avgPrice": 175769,
+        "salesCount": 26
+      },
+      {
+        "name": "Sandhill",
+        "avgPrice": 188670,
+        "salesCount": 27
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Quayside",
+        "postcode": "NE1 2AN",
+        "price": 129005,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Grey Street",
+        "postcode": "NE1 6AN",
+        "price": 169319,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Grainger Street",
+        "postcode": "NE1 5AQ",
+        "price": 120942,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Quayside",
+        "postcode": "NE1 7AH",
+        "price": 209633,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Dean Street",
+        "postcode": "NE1 2AY",
+        "price": 177382,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Sandhill",
+        "postcode": "NE1 9AT",
+        "price": 132230,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Grainger Street",
+        "postcode": "NE1 4AQ",
+        "price": 306386,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Grey Street",
+        "postcode": "NE1 1AS",
+        "price": 222533,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "dh1",
+    "name": "Durham City Centre",
+    "region": "North East",
+    "town": "Durham",
+    "county": "County Durham",
+    "avgPrice": 295009,
+    "medianPrice": 277308,
+    "totalSales": 774,
+    "yoyGrowth": 3.3,
+    "threeYearGrowth": 9.2,
+    "propertyTypes": {
+      "detached": {
+        "avg": 490250,
+        "count": 112,
+        "pct": 15
+      },
+      "semi": {
+        "avg": 357750,
+        "count": 157,
+        "pct": 20
+      },
+      "terraced": {
+        "avg": 278250,
+        "count": 180,
+        "pct": 23
+      },
+      "flat": {
+        "avg": 206700,
+        "count": 325,
+        "pct": 42
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Saddler Street",
+        "avgPrice": 250758,
+        "salesCount": 37
+      },
+      {
+        "name": "North Road",
+        "avgPrice": 274358,
+        "salesCount": 33
+      },
+      {
+        "name": "New Elvet",
+        "avgPrice": 297959,
+        "salesCount": 36
+      },
+      {
+        "name": "South Road",
+        "avgPrice": 321560,
+        "salesCount": 28
+      },
+      {
+        "name": "Claypath",
+        "avgPrice": 345161,
+        "salesCount": 16
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Saddler Street",
+        "postcode": "DH1 9AU",
+        "price": 236007,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 North Road",
+        "postcode": "DH1 6AS",
+        "price": 309759,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A New Elvet",
+        "postcode": "DH1 2AM",
+        "price": 221257,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Saddler Street",
+        "postcode": "DH1 1AA",
+        "price": 383512,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 South Road",
+        "postcode": "DH1 3AN",
+        "price": 324510,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Claypath",
+        "postcode": "DH1 3AB",
+        "price": 241907,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 New Elvet",
+        "postcode": "DH1 9AI",
+        "price": 560517,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 North Road",
+        "postcode": "DH1 8AJ",
+        "price": 407112,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "bs1",
+    "name": "Bristol Old City & Harbourside",
+    "region": "South West",
+    "town": "Bristol",
+    "county": "Bristol",
+    "avgPrice": 318181,
+    "medianPrice": 299090,
+    "totalSales": 636,
+    "yoyGrowth": 5.2,
+    "threeYearGrowth": 14.6,
+    "propertyTypes": {
+      "detached": {
+        "avg": 675250,
+        "count": 25,
+        "pct": 4
+      },
+      "semi": {
+        "avg": 492750,
+        "count": 36,
+        "pct": 6
+      },
+      "terraced": {
+        "avg": 383250,
+        "count": 41,
+        "pct": 6
+      },
+      "flat": {
+        "avg": 284700,
+        "count": 534,
+        "pct": 84
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Anchor Road",
+        "avgPrice": 270454,
+        "salesCount": 36
+      },
+      {
+        "name": "Welsh Back",
+        "avgPrice": 295908,
+        "salesCount": 37
+      },
+      {
+        "name": "Redcliff Street",
+        "avgPrice": 321363,
+        "salesCount": 22
+      },
+      {
+        "name": "Baldwin Street",
+        "avgPrice": 346817,
+        "salesCount": 29
+      },
+      {
+        "name": "Broad Quay",
+        "avgPrice": 372272,
+        "salesCount": 33
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Anchor Road",
+        "postcode": "BS1 1AG",
+        "price": 254545,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Welsh Back",
+        "postcode": "BS1 2AA",
+        "price": 334090,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Redcliff Street",
+        "postcode": "BS1 1AE",
+        "price": 238636,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Anchor Road",
+        "postcode": "BS1 9AB",
+        "price": 413635,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Baldwin Street",
+        "postcode": "BS1 8AE",
+        "price": 349999,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Broad Quay",
+        "postcode": "BS1 6AM",
+        "price": 260908,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Redcliff Street",
+        "postcode": "BS1 9AH",
+        "price": 604544,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Welsh Back",
+        "postcode": "BS1 7AE",
+        "price": 439090,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "bs8",
+    "name": "Clifton & Hotwells",
+    "region": "South West",
+    "town": "Bristol",
+    "county": "Bristol",
+    "avgPrice": 617798,
+    "medianPrice": 580730,
+    "totalSales": 582,
+    "yoyGrowth": 4.1,
+    "threeYearGrowth": 11.5,
+    "propertyTypes": {
+      "detached": {
+        "avg": 1100750,
+        "count": 65,
+        "pct": 11
+      },
+      "semi": {
+        "avg": 803250,
+        "count": 92,
+        "pct": 16
+      },
+      "terraced": {
+        "avg": 624750,
+        "count": 105,
+        "pct": 18
+      },
+      "flat": {
+        "avg": 464100,
+        "count": 320,
+        "pct": 55
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Clifton Down",
+        "avgPrice": 525128,
+        "salesCount": 35
+      },
+      {
+        "name": "Pembroke Road",
+        "avgPrice": 574552,
+        "salesCount": 33
+      },
+      {
+        "name": "Whiteladies Road",
+        "avgPrice": 623976,
+        "salesCount": 27
+      },
+      {
+        "name": "Royal York Crescent",
+        "avgPrice": 673400,
+        "salesCount": 12
+      },
+      {
+        "name": "Alma Road",
+        "avgPrice": 722824,
+        "salesCount": 19
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Clifton Down",
+        "postcode": "BS8 3AH",
+        "price": 494238,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Pembroke Road",
+        "postcode": "BS8 1AL",
+        "price": 648688,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Whiteladies Road",
+        "postcode": "BS8 8AA",
+        "price": 463349,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Clifton Down",
+        "postcode": "BS8 3AB",
+        "price": 803137,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Royal York Crescent",
+        "postcode": "BS8 3AM",
+        "price": 679578,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Alma Road",
+        "postcode": "BS8 3AT",
+        "price": 506594,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Whiteladies Road",
+        "postcode": "BS8 4AX",
+        "price": 1173816,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Pembroke Road",
+        "postcode": "BS8 8AQ",
+        "price": 852561,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "ba1",
+    "name": "Bath City Centre",
+    "region": "South West",
+    "town": "Bath",
+    "county": "Somerset",
+    "avgPrice": 521129,
+    "medianPrice": 489861,
+    "totalSales": 855,
+    "yoyGrowth": 3.9,
+    "threeYearGrowth": 10.9,
+    "propertyTypes": {
+      "detached": {
+        "avg": 943500,
+        "count": 90,
+        "pct": 11
+      },
+      "semi": {
+        "avg": 688500,
+        "count": 126,
+        "pct": 15
+      },
+      "terraced": {
+        "avg": 535500,
+        "count": 144,
+        "pct": 17
+      },
+      "flat": {
+        "avg": 397800,
+        "count": 496,
+        "pct": 58
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Great Pulteney Street",
+        "avgPrice": 442960,
+        "salesCount": 33
+      },
+      {
+        "name": "The Circus",
+        "avgPrice": 484650,
+        "salesCount": 12
+      },
+      {
+        "name": "Royal Crescent",
+        "avgPrice": 526340,
+        "salesCount": 17
+      },
+      {
+        "name": "Walcot Street",
+        "avgPrice": 568031,
+        "salesCount": 14
+      },
+      {
+        "name": "Milsom Street",
+        "avgPrice": 609721,
+        "salesCount": 36
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Great Pulteney Street",
+        "postcode": "BA1 6AW",
+        "price": 416903,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 The Circus",
+        "postcode": "BA1 4AQ",
+        "price": 547185,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Royal Crescent",
+        "postcode": "BA1 2AU",
+        "price": 390847,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Great Pulteney Street",
+        "postcode": "BA1 1AQ",
+        "price": 677468,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Walcot Street",
+        "postcode": "BA1 5AN",
+        "price": 573242,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Milsom Street",
+        "postcode": "BA1 2AD",
+        "price": 427326,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Royal Crescent",
+        "postcode": "BA1 1AO",
+        "price": 990145,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 The Circus",
+        "postcode": "BA1 1AL",
+        "price": 719158,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "ex1",
+    "name": "Exeter City Centre",
+    "region": "South West",
+    "town": "Exeter",
+    "county": "Devon",
+    "avgPrice": 341578,
+    "medianPrice": 321083,
+    "totalSales": 863,
+    "yoyGrowth": 4,
+    "threeYearGrowth": 11.2,
+    "propertyTypes": {
+      "detached": {
+        "avg": 592000,
+        "count": 108,
+        "pct": 13
+      },
+      "semi": {
+        "avg": 432000,
+        "count": 151,
+        "pct": 18
+      },
+      "terraced": {
+        "avg": 336000,
+        "count": 173,
+        "pct": 20
+      },
+      "flat": {
+        "avg": 249600,
+        "count": 432,
+        "pct": 50
+      }
+    },
+    "topStreets": [
+      {
+        "name": "High Street",
+        "avgPrice": 290341,
+        "salesCount": 15
+      },
+      {
+        "name": "Fore Street",
+        "avgPrice": 317668,
+        "salesCount": 26
+      },
+      {
+        "name": "South Street",
+        "avgPrice": 344994,
+        "salesCount": 18
+      },
+      {
+        "name": "Queen Street",
+        "avgPrice": 372320,
+        "salesCount": 28
+      },
+      {
+        "name": "Heavitree Road",
+        "avgPrice": 399646,
+        "salesCount": 24
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 High Street",
+        "postcode": "EX1 8AQ",
+        "price": 273262,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Fore Street",
+        "postcode": "EX1 9AM",
+        "price": 358657,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A South Street",
+        "postcode": "EX1 5AG",
+        "price": 256184,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 High Street",
+        "postcode": "EX1 1AH",
+        "price": 444051,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Queen Street",
+        "postcode": "EX1 5AP",
+        "price": 375736,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Heavitree Road",
+        "postcode": "EX1 5AH",
+        "price": 280094,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 South Street",
+        "postcode": "EX1 6AA",
+        "price": 648998,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Fore Street",
+        "postcode": "EX1 4AO",
+        "price": 471378,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "pl1",
+    "name": "Plymouth City Centre & Hoe",
+    "region": "South West",
+    "town": "Plymouth",
+    "county": "Devon",
+    "avgPrice": 196971,
+    "medianPrice": 185153,
+    "totalSales": 1228,
+    "yoyGrowth": 2.8,
+    "threeYearGrowth": 7.8,
+    "propertyTypes": {
+      "detached": {
+        "avg": 360750,
+        "count": 123,
+        "pct": 10
+      },
+      "semi": {
+        "avg": 263250,
+        "count": 172,
+        "pct": 14
+      },
+      "terraced": {
+        "avg": 204750,
+        "count": 196,
+        "pct": 16
+      },
+      "flat": {
+        "avg": 152100,
+        "count": 737,
+        "pct": 60
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Armada Way",
+        "avgPrice": 167425,
+        "salesCount": 34
+      },
+      {
+        "name": "Royal Parade",
+        "avgPrice": 183183,
+        "salesCount": 26
+      },
+      {
+        "name": "Notte Street",
+        "avgPrice": 198941,
+        "salesCount": 38
+      },
+      {
+        "name": "Citadel Road",
+        "avgPrice": 214698,
+        "salesCount": 18
+      },
+      {
+        "name": "Union Street",
+        "avgPrice": 230456,
+        "salesCount": 22
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Armada Way",
+        "postcode": "PL1 8AQ",
+        "price": 157577,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Royal Parade",
+        "postcode": "PL1 2AZ",
+        "price": 206820,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Notte Street",
+        "postcode": "PL1 6AH",
+        "price": 147728,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Armada Way",
+        "postcode": "PL1 4AS",
+        "price": 256062,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Citadel Road",
+        "postcode": "PL1 1AK",
+        "price": 216668,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Union Street",
+        "postcode": "PL1 5AQ",
+        "price": 161516,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Notte Street",
+        "postcode": "PL1 9AG",
+        "price": 374245,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Royal Parade",
+        "postcode": "PL1 7AT",
+        "price": 271820,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "tr1",
+    "name": "Truro City Centre",
+    "region": "South West",
+    "town": "Truro",
+    "county": "Cornwall",
+    "avgPrice": 357617,
+    "medianPrice": 336160,
+    "totalSales": 741,
+    "yoyGrowth": 3.5,
+    "threeYearGrowth": 9.8,
+    "propertyTypes": {
+      "detached": {
+        "avg": 573500,
+        "count": 120,
+        "pct": 16
+      },
+      "semi": {
+        "avg": 418500,
+        "count": 169,
+        "pct": 23
+      },
+      "terraced": {
+        "avg": 325500,
+        "count": 193,
+        "pct": 26
+      },
+      "flat": {
+        "avg": 241800,
+        "count": 259,
+        "pct": 35
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Lemon Street",
+        "avgPrice": 303974,
+        "salesCount": 20
+      },
+      {
+        "name": "Boscawen Street",
+        "avgPrice": 332584,
+        "salesCount": 39
+      },
+      {
+        "name": "Kenwyn Street",
+        "avgPrice": 361193,
+        "salesCount": 26
+      },
+      {
+        "name": "St Marys Street",
+        "avgPrice": 389803,
+        "salesCount": 29
+      },
+      {
+        "name": "Tregolls Road",
+        "avgPrice": 418412,
+        "salesCount": 33
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Lemon Street",
+        "postcode": "TR1 8AF",
+        "price": 286094,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Boscawen Street",
+        "postcode": "TR1 8AR",
+        "price": 375498,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Kenwyn Street",
+        "postcode": "TR1 8AA",
+        "price": 268213,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Lemon Street",
+        "postcode": "TR1 2AJ",
+        "price": 464902,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 St Marys Street",
+        "postcode": "TR1 2AH",
+        "price": 393379,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Tregolls Road",
+        "postcode": "TR1 9AL",
+        "price": 293246,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Kenwyn Street",
+        "postcode": "TR1 7AY",
+        "price": 679472,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Boscawen Street",
+        "postcode": "TR1 4AO",
+        "price": 493511,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "cf10",
+    "name": "Cardiff Bay & City Centre",
+    "region": "Wales",
+    "town": "Cardiff",
+    "county": "South Glamorgan",
+    "avgPrice": 198834,
+    "medianPrice": 186904,
+    "totalSales": 483,
+    "yoyGrowth": 4.4,
+    "threeYearGrowth": 12.3,
+    "propertyTypes": {
+      "detached": {
+        "avg": 416250,
+        "count": 22,
+        "pct": 5
+      },
+      "semi": {
+        "avg": 303750,
+        "count": 30,
+        "pct": 6
+      },
+      "terraced": {
+        "avg": 236250,
+        "count": 35,
+        "pct": 7
+      },
+      "flat": {
+        "avg": 175500,
+        "count": 396,
+        "pct": 82
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Bute Street",
+        "avgPrice": 169009,
+        "salesCount": 15
+      },
+      {
+        "name": "Lloyd George Avenue",
+        "avgPrice": 184916,
+        "salesCount": 35
+      },
+      {
+        "name": "St Mary Street",
+        "avgPrice": 200822,
+        "salesCount": 26
+      },
+      {
+        "name": "Harbour Drive",
+        "avgPrice": 216729,
+        "salesCount": 39
+      },
+      {
+        "name": "Pierhead Street",
+        "avgPrice": 232636,
+        "salesCount": 17
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Bute Street",
+        "postcode": "CF10 1AW",
+        "price": 159067,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Lloyd George Avenue",
+        "postcode": "CF10 1AA",
+        "price": 208776,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A St Mary Street",
+        "postcode": "CF10 3AK",
+        "price": 149126,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Bute Street",
+        "postcode": "CF10 4AK",
+        "price": 258484,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Harbour Drive",
+        "postcode": "CF10 7AY",
+        "price": 218717,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Pierhead Street",
+        "postcode": "CF10 7AI",
+        "price": 163044,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 St Mary Street",
+        "postcode": "CF10 5AM",
+        "price": 377785,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Lloyd George Avenue",
+        "postcode": "CF10 7AI",
+        "price": 274391,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "sa1",
+    "name": "Swansea Marina & Waterfront",
+    "region": "Wales",
+    "town": "Swansea",
+    "county": "West Glamorgan",
+    "avgPrice": 174658,
+    "medianPrice": 164179,
+    "totalSales": 584,
+    "yoyGrowth": 3,
+    "threeYearGrowth": 8.4,
+    "propertyTypes": {
+      "detached": {
+        "avg": 323750,
+        "count": 55,
+        "pct": 10
+      },
+      "semi": {
+        "avg": 236250,
+        "count": 78,
+        "pct": 13
+      },
+      "terraced": {
+        "avg": 183750,
+        "count": 89,
+        "pct": 15
+      },
+      "flat": {
+        "avg": 136500,
+        "count": 362,
+        "pct": 62
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Oystermouth Road",
+        "avgPrice": 148459,
+        "salesCount": 14
+      },
+      {
+        "name": "Kings Road",
+        "avgPrice": 162432,
+        "salesCount": 26
+      },
+      {
+        "name": "Trawler Road",
+        "avgPrice": 176405,
+        "salesCount": 17
+      },
+      {
+        "name": "Victoria Road",
+        "avgPrice": 190377,
+        "salesCount": 24
+      },
+      {
+        "name": "Langdon Road",
+        "avgPrice": 204350,
+        "salesCount": 27
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Oystermouth Road",
+        "postcode": "SA1 6AJ",
+        "price": 139726,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Kings Road",
+        "postcode": "SA1 1AU",
+        "price": 183391,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A Trawler Road",
+        "postcode": "SA1 1AF",
+        "price": 130994,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Oystermouth Road",
+        "postcode": "SA1 3AO",
+        "price": 227055,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Victoria Road",
+        "postcode": "SA1 9AI",
+        "price": 192124,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Langdon Road",
+        "postcode": "SA1 6AZ",
+        "price": 143220,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 Trawler Road",
+        "postcode": "SA1 7AD",
+        "price": 331850,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Kings Road",
+        "postcode": "SA1 9AA",
+        "price": 241028,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "nr1",
+    "name": "Norwich City Centre & Riverside",
+    "region": "East of England",
+    "town": "Norwich",
+    "county": "Norfolk",
+    "avgPrice": 253581,
+    "medianPrice": 238366,
+    "totalSales": 589,
+    "yoyGrowth": 3.3,
+    "threeYearGrowth": 9.2,
+    "propertyTypes": {
+      "detached": {
+        "avg": 444000,
+        "count": 71,
+        "pct": 12
+      },
+      "semi": {
+        "avg": 324000,
+        "count": 99,
+        "pct": 17
+      },
+      "terraced": {
+        "avg": 252000,
+        "count": 113,
+        "pct": 19
+      },
+      "flat": {
+        "avg": 187200,
+        "count": 306,
+        "pct": 52
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Riverside Road",
+        "avgPrice": 215544,
+        "salesCount": 31
+      },
+      {
+        "name": "King Street",
+        "avgPrice": 235830,
+        "salesCount": 18
+      },
+      {
+        "name": "St Benedicts Street",
+        "avgPrice": 256117,
+        "salesCount": 30
+      },
+      {
+        "name": "Prince of Wales Road",
+        "avgPrice": 276403,
+        "salesCount": 17
+      },
+      {
+        "name": "Magdalen Street",
+        "avgPrice": 296690,
+        "salesCount": 34
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Riverside Road",
+        "postcode": "NR1 7AS",
+        "price": 202865,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 King Street",
+        "postcode": "NR1 9AC",
+        "price": 266260,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A St Benedicts Street",
+        "postcode": "NR1 4AL",
+        "price": 190186,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Riverside Road",
+        "postcode": "NR1 5AW",
+        "price": 329655,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Prince of Wales Road",
+        "postcode": "NR1 9AK",
+        "price": 278939,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Magdalen Street",
+        "postcode": "NR1 3AO",
+        "price": 207936,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 St Benedicts Street",
+        "postcode": "NR1 3AG",
+        "price": 481804,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 King Street",
+        "postcode": "NR1 5AJ",
+        "price": 349942,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  },
+  {
+    "outcode": "ip1",
+    "name": "Ipswich Town Centre",
+    "region": "East of England",
+    "town": "Ipswich",
+    "county": "Suffolk",
+    "avgPrice": 221134,
+    "medianPrice": 207866,
+    "totalSales": 694,
+    "yoyGrowth": 2.9,
+    "threeYearGrowth": 8.1,
+    "propertyTypes": {
+      "detached": {
+        "avg": 379250,
+        "count": 90,
+        "pct": 13
+      },
+      "semi": {
+        "avg": 276750,
+        "count": 126,
+        "pct": 18
+      },
+      "terraced": {
+        "avg": 215250,
+        "count": 144,
+        "pct": 21
+      },
+      "flat": {
+        "avg": 159900,
+        "count": 333,
+        "pct": 48
+      }
+    },
+    "topStreets": [
+      {
+        "name": "Tavern Street",
+        "avgPrice": 187964,
+        "salesCount": 29
+      },
+      {
+        "name": "Fore Street",
+        "avgPrice": 205655,
+        "salesCount": 35
+      },
+      {
+        "name": "St Peters Street",
+        "avgPrice": 223345,
+        "salesCount": 36
+      },
+      {
+        "name": "Civic Drive",
+        "avgPrice": 241036,
+        "salesCount": 38
+      },
+      {
+        "name": "Woodbridge Road",
+        "avgPrice": 258727,
+        "salesCount": 33
+      }
+    ],
+    "recentSales": [
+      {
+        "date": "2026-09-14",
+        "address": "14 Tavern Street",
+        "postcode": "IP1 9AD",
+        "price": 176907,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-08-12",
+        "address": "28 Fore Street",
+        "postcode": "IP1 4AR",
+        "price": 232191,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": true
+      },
+      {
+        "date": "2026-06-10",
+        "address": "42A St Peters Street",
+        "postcode": "IP1 4AB",
+        "price": 165851,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-05-08",
+        "address": "7 Tavern Street",
+        "postcode": "IP1 3AF",
+        "price": 287474,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-03-06",
+        "address": "55 Civic Drive",
+        "postcode": "IP1 2AK",
+        "price": 243247,
+        "type": "Terraced",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2026-02-04",
+        "address": "102 Woodbridge Road",
+        "postcode": "IP1 4AK",
+        "price": 181330,
+        "type": "Flat",
+        "tenure": "Leasehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-12-02",
+        "address": "3 St Peters Street",
+        "postcode": "IP1 4AF",
+        "price": 420155,
+        "type": "Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      },
+      {
+        "date": "2025-10-31",
+        "address": "19 Fore Street",
+        "postcode": "IP1 1AX",
+        "price": 305165,
+        "type": "Semi-Detached",
+        "tenure": "Freehold",
+        "newBuild": false
+      }
+    ]
+  }
+]

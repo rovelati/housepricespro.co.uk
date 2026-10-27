@@ -1,0 +1,26 @@
+---
+// src/pages/cookies/index.astro — Cookie Policy & PECR Compliance
+import Layout from '../../layouts/Layout.astro';
+
+const title = 'Cookie Policy & Consent | HousePricesPro UK';
+const description = 'HousePricesPro cookie policy in accordance with the UK Privacy and Electronic Communications Regulations (PECR) and Google Consent Mode v2.';
+---
+
+<Layout title={title} description={description}>
+  <div class="max-w-4xl mx-auto px-4 py-16">
+    <h1 class="text-3xl font-extrabold text-slate-900 dark:text-white mb-6">Cookie Policy</h1>
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-10 text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-4 leading-relaxed">
+      <p>Last updated: October 2026</p>
+      <p>This Cookie Policy explains how HousePricesPro.co.uk uses cookies and similar tracking technologies in compliance with the UK PECR and UK GDPR.</p>
+
+      <h2 class="text-base font-bold text-slate-900 dark:text-white mt-4">1. What Are Cookies?</h2>
+      <p>Cookies are small text files stored on your computer or mobile device when you browse websites. They help us remember your preferences, analyse website traffic, and deliver personalised advertisements.</p>
+
+      <h2 class="text-base font-bold text-slate-900 dark:text-white mt-4">2. Google Consent Mode v2</h2>
+      <p>Our website implements Google Consent Mode v2. By default, all non-essential analytics and advertising cookies are set to "denied" until you grant explicit consent via our cookie banner.</p>
+
+      <h2 class="text-base font-bold text-slate-900 dark:text-white mt-4">3. Managing Your Preferences</h2>
+      <p>You can adjust or revoke your cookie choices at any time by clearing your browser cookies or clicking the reset consent option.</p>
+    </div>
+  </div>
+</Layout>

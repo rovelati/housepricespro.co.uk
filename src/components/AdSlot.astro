@@ -1,0 +1,39 @@
+---
+// AdSlot.astro — High-performance AdSense Slot Placeholder with zero CLS
+interface Props {
+  slot?: string;
+  format?: 'horizontal' | 'rectangle' | 'in-feed';
+  class?: string;
+}
+
+const { slot = 'auto', format = 'horizontal', class: className = '' } = Astro.props;
+
+const formatClasses = {
+  'horizontal': 'min-h-[90px] md:min-h-[100px] w-full',
+  'rectangle': 'min-h-[250px] md:min-h-[280px] w-full max-w-[336px]',
+  'in-feed': 'min-h-[120px] w-full'
+}[format];
+---
+
+<div class={`my-6 flex flex-col items-center justify-center ${className}`}>
+  <div class="text-[10px] uppercase tracking-wider text-slate-400 dark:text-slate-500 font-mono mb-1">
+    Advertisement
+  </div>
+  <div class={`bg-slate-100 dark:bg-slate-800/50 border border-dashed border-slate-300 dark:border-slate-700 rounded-lg flex items-center justify-center overflow-hidden transition-all ${formatClasses}`}>
+    {slot !== 'auto' ? (
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+           data-ad-slot={slot}
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    ) : (
+      <div class="text-xs text-slate-400 dark:text-slate-500 font-medium flex items-center gap-2">
+        <svg class="w-4 h-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+        </svg>
+        <span>Sponsored Real Estate Insights & Mortgage Offers</span>
+      </div>
+    )}
+  </div>
+</div>

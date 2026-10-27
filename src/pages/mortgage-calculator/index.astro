@@ -1,0 +1,94 @@
+---
+// src/pages/mortgage-calculator/index.astro — Comprehensive UK Mortgage Calculator
+import Layout from '../../layouts/Layout.astro';
+import MortgageWidget from '../../components/MortgageWidget.astro';
+import AdSlot from '../../components/AdSlot.astro';
+
+const title = 'UK Mortgage Calculator 2026 | Repayments & LTV Rates | HousePricesPro';
+const description = 'Calculate your monthly mortgage repayments, interest rates, and loan-to-value (LTV) affordability tiers. Compare 2-year and 5-year fixed rate UK mortgages.';
+---
+
+<Layout title={title} description={description}>
+  <div class="bg-gradient-to-b from-slate-900 to-slate-950 text-white pt-12 pb-16 border-b border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold mb-4">
+        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+        UK Mortgage Affordability Tool 2026
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">
+        Mortgage Repayment & LTV Calculator
+      </h1>
+      <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        Understand how property prices, deposit amounts, and mortgage terms affect your monthly payment. Benchmark across 60%, 75%, 80%, and 90% Loan-to-Value (LTV) tiers.
+      </p>
+    </div>
+  </div>
+
+  <div class="max-w-5xl mx-auto px-4 -mt-8 relative z-20 pb-20 space-y-12">
+    <!-- Interactive Calculator Card -->
+    <MortgageWidget initialPrice={350000} />
+
+    <AdSlot format="horizontal" />
+
+    <!-- LTV Rates Table Guide -->
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-sm">
+      <h2 class="text-xl font-bold text-slate-900 dark:text-white mb-2">
+        2026 UK Benchmark Fixed Mortgage Rates by LTV Tier
+      </h2>
+      <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-6">
+        Typical competitive lender rates across the UK market for prime residential borrowers.
+      </p>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs sm:text-sm">
+          <thead>
+            <tr class="border-b border-slate-200 dark:border-slate-800 text-slate-400 uppercase tracking-wider text-xs">
+              <th class="py-3 px-3 font-semibold">LTV Tier</th>
+              <th class="py-3 px-3 font-semibold">Min. Deposit</th>
+              <th class="py-3 px-3 font-semibold">2-Year Fixed (Avg)</th>
+              <th class="py-3 px-3 font-semibold">5-Year Fixed (Avg)</th>
+              <th class="py-3 px-3 font-semibold">Risk Level</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+              <td class="py-3.5 px-3 font-bold text-blue-600 dark:text-blue-400">60% LTV</td>
+              <td class="py-3.5 px-3">40% Deposit</td>
+              <td class="py-3.5 px-3 font-semibold">4.15%</td>
+              <td class="py-3.5 px-3 font-semibold text-emerald-600 dark:text-emerald-400">3.95%</td>
+              <td class="py-3.5 px-3 text-slate-500">Lowest (Best Rates)</td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+              <td class="py-3.5 px-3 font-bold text-blue-600 dark:text-blue-400">75% LTV</td>
+              <td class="py-3.5 px-3">25% Deposit</td>
+              <td class="py-3.5 px-3 font-semibold">4.35%</td>
+              <td class="py-3.5 px-3 font-semibold">4.10%</td>
+              <td class="py-3.5 px-3 text-slate-500">Low</td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+              <td class="py-3.5 px-3 font-bold text-blue-600 dark:text-blue-400">80% LTV</td>
+              <td class="py-3.5 px-3">20% Deposit</td>
+              <td class="py-3.5 px-3 font-semibold">4.55%</td>
+              <td class="py-3.5 px-3 font-semibold">4.25%</td>
+              <td class="py-3.5 px-3 text-slate-500">Moderate</td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+              <td class="py-3.5 px-3 font-bold text-blue-600 dark:text-blue-400">90% LTV</td>
+              <td class="py-3.5 px-3">10% Deposit</td>
+              <td class="py-3.5 px-3 font-semibold">4.95%</td>
+              <td class="py-3.5 px-3 font-semibold">4.50%</td>
+              <td class="py-3.5 px-3 text-slate-500">Higher (FTB friendly)</td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+              <td class="py-3.5 px-3 font-bold text-blue-600 dark:text-blue-400">95% LTV</td>
+              <td class="py-3.5 px-3">5% Deposit</td>
+              <td class="py-3.5 px-3 font-semibold">5.45%</td>
+              <td class="py-3.5 px-3 font-semibold">4.95%</td>
+              <td class="py-3.5 px-3 text-slate-500">Mortgage Guarantee</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</Layout>

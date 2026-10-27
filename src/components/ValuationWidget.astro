@@ -1,0 +1,79 @@
+---
+// ValuationWidget.astro — High-Converting Free Property Valuation Widget
+interface Props {
+  postcode?: string;
+  town?: string;
+  variant?: 'banner' | 'card' | 'inline';
+}
+
+const { postcode = '', town = '', variant = 'card' } = Astro.props;
+const displayLocation = postcode ? `${postcode.toUpperCase()} ${town ? `(${town})` : ''}` : 'Your Area';
+---
+
+<div class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white rounded-2xl p-6 md:p-8 border border-blue-500/20 shadow-xl">
+  <div class="absolute -right-12 -top-12 w-48 h-48 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
+  <div class="absolute -left-12 -bottom-12 w-48 h-48 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+  <div class="relative z-10">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold mb-3">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      Official 2026 Property Valuation Tool
+    </div>
+
+    <h3 class="text-xl md:text-2xl font-bold tracking-tight mb-2">
+      Thinking of Selling in {displayLocation}?
+    </h3>
+    <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-6 max-w-2xl">
+      Find out the exact market value of your home based on the latest 2026 Land Registry transaction comparables. Compare top-performing local estate agents with verified sales track records.
+    </p>
+
+    <form action="/free-valuation/" method="GET" class="flex flex-col sm:flex-row gap-3 max-w-xl">
+      <div class="relative flex-1">
+        <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </div>
+        <input
+          type="text"
+          name="postcode"
+          value={postcode ? postcode.toUpperCase() : ''}
+          placeholder="Enter full postcode (e.g. SW1A 1AA)"
+          required
+          class="w-full pl-10 pr-4 py-3 bg-slate-800/90 border border-slate-700 rounded-xl text-white placeholder-slate-400 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+        />
+      </div>
+      <button
+        type="submit"
+        class="px-6 py-3 bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-500 hover:to-emerald-500 text-white font-semibold text-sm rounded-xl shadow-lg shadow-blue-900/30 hover:shadow-blue-900/50 transition-all flex items-center justify-center gap-2 shrink-0 cursor-pointer"
+      >
+        <span>Get Free Valuation</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </button>
+    </form>
+
+    <div class="mt-4 flex flex-wrap items-center gap-4 text-xs text-slate-400">
+      <span class="flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        100% Free & No Obligation
+      </span>
+      <span class="flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        Instant Digital Estimate
+      </span>
+      <span class="flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        Over 350,000 UK Homes Valued
+      </span>
+    </div>
+  </div>
+</div>

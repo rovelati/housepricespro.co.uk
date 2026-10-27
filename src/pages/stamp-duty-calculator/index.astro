@@ -1,0 +1,163 @@
+---
+// src/pages/stamp-duty-calculator/index.astro — 2026 UK Stamp Duty Land Tax Calculator
+import Layout from '../../layouts/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+
+const title = 'Stamp Duty Calculator 2026 (SDLT) | England & Wales | HousePricesPro';
+const description = 'Calculate your exact UK Stamp Duty Land Tax (SDLT) for 2026. Calculate SDLT rates for first-time buyers, home movers, and additional property or buy-to-let purchases.';
+---
+
+<Layout title={title} description={description}>
+  <div class="bg-gradient-to-b from-slate-900 to-slate-950 text-white pt-12 pb-16 border-b border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold mb-4">
+        <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+        HMRC Rates for 2026
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">
+        UK Stamp Duty Calculator (SDLT)
+      </h1>
+      <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        Calculate your exact Stamp Duty Land Tax payable on residential properties in England and Wales. Updated with official HMRC tax bands and relief rules.
+      </p>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-4 -mt-8 relative z-20 pb-20 space-y-10">
+    <!-- Calculator Card -->
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-10 shadow-xl">
+      <div class="space-y-6">
+        <!-- Buyer Category -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2">
+            Buyer Category
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <label class="cursor-pointer">
+              <input type="radio" name="buyer_type" value="ftb" class="peer sr-only" />
+              <div class="p-3.5 text-center rounded-xl border border-slate-200 dark:border-slate-700 peer-checked:border-blue-600 peer-checked:bg-blue-50 dark:peer-checked:bg-blue-950/50 peer-checked:text-blue-600 dark:peer-checked:text-blue-400 text-xs font-bold transition">
+                First-Time Buyer
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input type="radio" name="buyer_type" value="mover" class="peer sr-only" checked />
+              <div class="p-3.5 text-center rounded-xl border border-slate-200 dark:border-slate-700 peer-checked:border-blue-600 peer-checked:bg-blue-50 dark:peer-checked:bg-blue-950/50 peer-checked:text-blue-600 dark:peer-checked:text-blue-400 text-xs font-bold transition">
+                Moving Home (Main Residence)
+              </div>
+            </label>
+            <label class="cursor-pointer">
+              <input type="radio" name="buyer_type" value="additional" class="peer sr-only" />
+              <div class="p-3.5 text-center rounded-xl border border-slate-200 dark:border-slate-700 peer-checked:border-blue-600 peer-checked:bg-blue-50 dark:peer-checked:bg-blue-950/50 peer-checked:text-blue-600 dark:peer-checked:text-blue-400 text-xs font-bold transition">
+                Additional Home / Buy to Let
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Property Price -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2">
+            Agreed Property Price (£)
+          </label>
+          <div class="relative">
+            <span class="absolute left-4 top-3.5 text-lg font-bold text-slate-400">£</span>
+            <input
+              type="number"
+              id="sdlt-price"
+              value="425000"
+              step="1000"
+              min="10000"
+              class="w-full pl-9 pr-4 py-3 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl text-lg font-bold text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-600 focus:outline-none"
+            />
+          </div>
+        </div>
+
+        <!-- Result Box -->
+        <div class="bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-xl p-6 sm:p-8 text-center border border-indigo-800/50">
+          <div class="text-xs uppercase tracking-wider font-semibold text-blue-200 mb-1">
+            Total Stamp Duty Land Tax (SDLT) Due
+          </div>
+          <div id="sdlt-total" class="text-4xl sm:text-5xl font-extrabold text-amber-400 my-2">
+            £8,750
+          </div>
+          <div id="effective-rate" class="text-xs text-blue-200 font-medium">
+            Effective Tax Rate: 2.06% of purchase price
+          </div>
+
+          <div id="breakdown-list" class="mt-6 pt-6 border-t border-white/10 text-xs text-left space-y-2 text-slate-300">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <AdSlot format="horizontal" />
+  </div>
+
+  <script is:inline>
+    (function() {
+      const priceInput = document.getElementById('sdlt-price');
+      const totalEl = document.getElementById('sdlt-total');
+      const rateEl = document.getElementById('effective-rate');
+      const breakdownEl = document.getElementById('breakdown-list');
+
+      function calculate() {
+        const price = parseFloat(priceInput.value) || 0;
+        const buyerType = document.querySelector('input[name="buyer_type"]:checked')?.value || 'mover';
+
+        let tax = 0;
+        let breakdown = [];
+
+        if (buyerType === 'ftb' && price <= 625000) {
+          // First-Time Buyer Relief
+          if (price <= 425000) {
+            tax = 0;
+            breakdown.push(`Up to £425,000 at 0%: £0`);
+          } else {
+            const taxable = price - 425000;
+            const portion = taxable * 0.05;
+            tax = portion;
+            breakdown.push(`Up to £425,000 at 0%: £0`);
+            breakdown.push(`£425,001 to £${price.toLocaleString()} at 5%: £${Math.round(portion).toLocaleString()}`);
+          }
+        } else {
+          // Standard Mover or FTB over threshold
+          const surcharge = buyerType === 'additional' ? 0.05 : 0;
+
+          const bands = [
+            { threshold: 250000, rate: 0.00 + surcharge },
+            { threshold: 925000, rate: 0.05 + surcharge },
+            { threshold: 1500000, rate: 0.10 + surcharge },
+            { threshold: Infinity, rate: 0.12 + surcharge }
+          ];
+
+          let previousThreshold = 0;
+          for (let i = 0; i < bands.length; i++) {
+            const b = bands[i];
+            if (price > previousThreshold) {
+              const taxableInBand = Math.min(price, b.threshold) - previousThreshold;
+              const bandTax = taxableInBand * b.rate;
+              tax += bandTax;
+              if (taxableInBand > 0) {
+                const maxLabel = b.threshold === Infinity ? 'above' : `to £${b.threshold.toLocaleString()}`;
+                breakdown.push(`£${(previousThreshold + 1).toLocaleString()} ${maxLabel} (${(b.rate * 100).toFixed(0)}%): £${Math.round(bandTax).toLocaleString()}`);
+              }
+              previousThreshold = b.threshold;
+            }
+          }
+        }
+
+        const effRate = price > 0 ? ((tax / price) * 100).toFixed(2) : '0.00';
+        totalEl.textContent = '£' + Math.round(tax).toLocaleString();
+        rateEl.textContent = `Effective Tax Rate: ${effRate}% of purchase price`;
+
+        breakdownEl.innerHTML = breakdown.map(item => `<div class="flex justify-between"><span>${item.split(':')[0]}</span><span class="font-bold text-white">${item.split(':')[1]}</span></div>`).join('');
+      }
+
+      if (priceInput) priceInput.addEventListener('input', calculate);
+      document.querySelectorAll('input[name="buyer_type"]').forEach(r => r.addEventListener('change', calculate));
+
+      calculate();
+    })();
+  </script>
+</Layout>

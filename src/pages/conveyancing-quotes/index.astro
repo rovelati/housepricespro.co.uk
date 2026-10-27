@@ -1,0 +1,93 @@
+---
+// src/pages/conveyancing-quotes/index.astro — Conveyancing Solicitor Cost Breakdown & Quotes
+import Layout from '../../layouts/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+
+const title = 'UK Conveyancing Solicitor Costs 2026 | Free Quotes & Comparison | HousePricesPro';
+const description = 'Compare UK conveyancing solicitor fees for buying, selling, or remortgaging a home. Full breakdown of legal fees, disbursements, local authority searches, and Land Registry fees.';
+---
+
+<Layout title={title} description={description}>
+  <div class="bg-gradient-to-b from-slate-900 to-slate-950 text-white pt-12 pb-16 border-b border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold mb-4">
+        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+        UK Legal Moving Costs 2026
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">
+        Conveyancing Solicitor Costs & Quotes
+      </h1>
+      <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        Understand typical legal fees and disbursements when buying or selling a home in England and Wales. Fixed fee, "No Sale, No Fee" legal protection.
+      </p>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-4 -mt-8 relative z-20 pb-20 space-y-10">
+    <!-- Cost Breakdown Card -->
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl">
+      <h2 class="text-xl font-bold text-slate-900 dark:text-white mb-4">
+        Average Conveyancing Costs in the UK (2026)
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div class="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 rounded-xl p-4">
+          <div class="text-xs text-slate-500 dark:text-slate-400 font-semibold uppercase">Buying a Property</div>
+          <div class="text-2xl font-extrabold text-blue-600 dark:text-blue-400 mt-1">£1,200 – £2,100</div>
+          <div class="text-xs text-slate-400 mt-1">Includes search fees + legal work</div>
+        </div>
+
+        <div class="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 rounded-xl p-4">
+          <div class="text-xs text-slate-500 dark:text-slate-400 font-semibold uppercase">Selling a Property</div>
+          <div class="text-2xl font-extrabold text-emerald-600 dark:text-emerald-400 mt-1">£950 – £1,650</div>
+          <div class="text-xs text-slate-400 mt-1">Contract pack + title redemption</div>
+        </div>
+
+        <div class="bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 rounded-xl p-4">
+          <div class="text-xs text-slate-500 dark:text-slate-400 font-semibold uppercase">Remortgaging</div>
+          <div class="text-2xl font-extrabold text-purple-600 dark:text-purple-400 mt-1">£400 – £800</div>
+          <div class="text-xs text-slate-400 mt-1">Many lenders offer free legals</div>
+        </div>
+      </div>
+
+      <h3 class="text-base font-bold text-slate-900 dark:text-white mb-3">
+        Essential Conveyancing Disbursements Explained
+      </h3>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs sm:text-sm">
+          <thead>
+            <tr class="border-b border-slate-200 dark:border-slate-800 text-slate-400 text-xs uppercase tracking-wider">
+              <th class="py-2.5 px-3">Disbursement Item</th>
+              <th class="py-2.5 px-3">Typical Cost</th>
+              <th class="py-2.5 px-3">Description</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800 text-slate-600 dark:text-slate-300">
+            <tr>
+              <td class="py-3 px-3 font-semibold text-slate-900 dark:text-white">Local Authority Searches</td>
+              <td class="py-3 px-3 font-bold text-blue-600">£200 – £350</td>
+              <td class="py-3 px-3 text-xs">Planning permission, road adoption, conservation zones.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-3 font-semibold text-slate-900 dark:text-white">Drainage & Water Search</td>
+              <td class="py-3 px-3 font-bold text-blue-600">£50 – £100</td>
+              <td class="py-3 px-3 text-xs">Mains water connection and public sewer proximity.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-3 font-semibold text-slate-900 dark:text-white">Environmental Search</td>
+              <td class="py-3 px-3 font-bold text-blue-600">£55 – £85</td>
+              <td class="py-3 px-3 text-xs">Flood risk, land contamination, subsidence, radon gas.</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-3 font-semibold text-slate-900 dark:text-white">HM Land Registry Registration</td>
+              <td class="py-3 px-3 font-bold text-blue-600">£45 – £500</td>
+              <td class="py-3 px-3 text-xs">Official registration of your title deed with the UK Government.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <AdSlot format="horizontal" />
+  </div>
+</Layout>

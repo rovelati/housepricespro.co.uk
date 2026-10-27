@@ -1,0 +1,170 @@
+---
+// MortgageWidget.astro — Interactive UK Mortgage Repayment & LTV Calculator
+interface Props {
+  initialPrice?: number;
+  postcode?: string;
+}
+
+const { initialPrice = 320000, postcode = '' } = Astro.props;
+---
+
+<div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 md:p-8 shadow-sm">
+  <div class="flex items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-100 dark:border-slate-800">
+    <div>
+      <h3 class="text-lg md:text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+        <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        Mortgage Repayment Calculator
+      </h3>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+        Calculate your monthly repayments and Loan-to-Value (LTV) tier for {postcode ? `properties in ${postcode.toUpperCase()}` : 'UK properties'}.
+      </p>
+    </div>
+    <span class="hidden sm:inline-flex px-2.5 py-1 text-xs font-semibold rounded-md bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-900">
+      2026 Rates
+    </span>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+    <!-- Controls -->
+    <div class="lg:col-span-7 space-y-5">
+      <div>
+        <div class="flex justify-between text-xs font-medium text-slate-600 dark:text-slate-300 mb-1.5">
+          <span>Property Price</span>
+          <span id="price-val" class="font-bold text-slate-900 dark:text-white">£{initialPrice.toLocaleString()}</span>
+        </div>
+        <input
+          id="price-input"
+          type="range"
+          min="100000"
+          max="1500000"
+          step="5000"
+          value={initialPrice}
+          class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-lg appearance-none cursor-pointer accent-blue-600"
+        />
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div>
+          <label class="block text-xs font-medium text-slate-600 dark:text-slate-300 mb-1.5">Deposit (%)</label>
+          <select id="deposit-pct" class="w-full px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-900 dark:text-white font-medium focus:ring-2 focus:ring-blue-500">
+            <option value="5">5% (95% LTV)</option>
+            <option value="10">10% (90% LTV)</option>
+            <option value="15" selected>15% (85% LTV)</option>
+            <option value="20">20% (80% LTV)</option>
+            <option value="25">25% (75% LTV)</option>
+            <option value="40">40% (60% LTV)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-medium text-slate-600 dark:text-slate-300 mb-1.5">Interest Rate</label>
+          <div class="relative">
+            <input
+              id="rate-input"
+              type="number"
+              step="0.05"
+              min="1.0"
+              max="15.0"
+              value="4.25"
+              class="w-full pl-3 pr-7 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-900 dark:text-white font-medium focus:ring-2 focus:ring-blue-500"
+            />
+            <span class="absolute right-3 top-2.5 text-xs text-slate-400 font-bold">%</span>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-medium text-slate-600 dark:text-slate-300 mb-1.5">Mortgage Term</label>
+          <select id="term-input" class="w-full px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-sm text-slate-900 dark:text-white font-medium focus:ring-2 focus:ring-blue-500">
+            <option value="15">15 Years</option>
+            <option value="20">20 Years</option>
+            <option value="25" selected>25 Years</option>
+            <option value="30">30 Years</option>
+            <option value="35">35 Years</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Output Result Card -->
+    <div class="lg:col-span-5 bg-gradient-to-br from-blue-900 to-indigo-950 text-white rounded-xl p-6 shadow-md border border-blue-800/50">
+      <div class="text-xs text-blue-200 uppercase tracking-wider font-semibold mb-1">
+        Estimated Monthly Repayment
+      </div>
+      <div id="monthly-payment" class="text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-3">
+        £1,460 /mo
+      </div>
+
+      <div class="space-y-1.5 pt-3 border-t border-blue-800/60 text-xs text-blue-200">
+        <div class="flex justify-between">
+          <span>Loan Amount:</span>
+          <span id="loan-amount-val" class="font-semibold text-white">£272,000</span>
+        </div>
+        <div class="flex justify-between">
+          <span>Deposit Required:</span>
+          <span id="deposit-val" class="font-semibold text-emerald-400">£48,000</span>
+        </div>
+        <div class="flex justify-between">
+          <span>LTV Tier:</span>
+          <span id="ltv-val" class="font-semibold text-white">85% LTV</span>
+        </div>
+      </div>
+
+      <a
+        href="/mortgage-calculator/"
+        class="mt-5 w-full block text-center py-2.5 px-4 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs uppercase tracking-wider rounded-lg shadow transition"
+      >
+        Compare Broker Deals
+      </a>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function() {
+    const priceInput = document.getElementById('price-input');
+    const priceVal = document.getElementById('price-val');
+    const depositPct = document.getElementById('deposit-pct');
+    const rateInput = document.getElementById('rate-input');
+    const termInput = document.getElementById('term-input');
+    const monthlyPaymentEl = document.getElementById('monthly-payment');
+    const loanAmountEl = document.getElementById('loan-amount-val');
+    const depositEl = document.getElementById('deposit-val');
+    const ltvEl = document.getElementById('ltv-val');
+
+    function calculate() {
+      const price = parseFloat(priceInput.value) || 0;
+      const depPct = parseFloat(depositPct.value) || 0;
+      const annualRate = parseFloat(rateInput.value) || 0;
+      const termYears = parseFloat(termInput.value) || 25;
+
+      const deposit = price * (depPct / 100);
+      const loan = price - deposit;
+      const ltv = 100 - depPct;
+
+      const monthlyRate = (annualRate / 100) / 12;
+      const nPayments = termYears * 12;
+
+      let monthly = 0;
+      if (monthlyRate > 0) {
+        monthly = loan * (monthlyRate * Math.pow(1 + monthlyRate, nPayments)) / (Math.pow(1 + monthlyRate, nPayments) - 1);
+      } else {
+        monthly = loan / nPayments;
+      }
+
+      priceVal.textContent = '£' + Math.round(price).toLocaleString();
+      depositEl.textContent = '£' + Math.round(deposit).toLocaleString();
+      loanAmountEl.textContent = '£' + Math.round(loan).toLocaleString();
+      ltvEl.textContent = ltv + '% LTV';
+      monthlyPaymentEl.textContent = '£' + Math.round(monthly).toLocaleString() + ' /mo';
+    }
+
+    if (priceInput) priceInput.addEventListener('input', calculate);
+    if (depositPct) depositPct.addEventListener('change', calculate);
+    if (rateInput) rateInput.addEventListener('input', calculate);
+    if (termInput) termInput.addEventListener('change', calculate);
+
+    calculate();
+  })();
+</script>

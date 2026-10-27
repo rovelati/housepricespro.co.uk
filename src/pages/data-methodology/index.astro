@@ -1,0 +1,58 @@
+---
+// src/pages/data-methodology/index.astro — HM Land Registry Data Methodology & Attribution
+import Layout from '../../layouts/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+
+const title = 'Data Methodology & Land Registry Attribution | HousePricesPro';
+const description = 'How HousePricesPro compiles, processes, and verifies UK sold house prices, property transactions, and automated valuation estimates using official HM Land Registry data.';
+---
+
+<Layout title={title} description={description}>
+  <div class="bg-gradient-to-b from-slate-900 to-slate-950 text-white pt-12 pb-16 border-b border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold mb-4">
+        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+        Official Open Data Integrity
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">
+        Data Methodology & Attribution
+      </h1>
+      <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        Our commitment to accuracy, government open data licensing, and transparent real estate market statistics.
+      </p>
+    </div>
+  </div>
+
+  <div class="max-w-3xl mx-auto px-4 -mt-8 relative z-20 pb-20 space-y-8">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-10 shadow-xl prose dark:prose-invert max-w-none text-xs sm:text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+      <h2 class="text-lg font-bold text-slate-900 dark:text-white">1. Official Data Source (HM Land Registry)</h2>
+      <p>
+        HousePricesPro.co.uk aggregates and publishes sold property prices for residential properties located in England and Wales. The underlying transaction data is supplied by <strong>HM Land Registry</strong> via its public <strong>Price Paid Data (PPD)</strong> open dataset.
+      </p>
+      <div class="p-4 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 text-xs">
+        <strong>Official Crown Copyright Notice:</strong><br />
+        Contains HM Land Registry data © Crown copyright and database right 2026. This data is licensed under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel="noopener" class="text-blue-600 underline">Open Government Licence v3.0</a>.
+      </div>
+
+      <h2 class="text-lg font-bold text-slate-900 dark:text-white mt-8">2. Frequency of Updates & Reporting Lag</h2>
+      <p>
+        HM Land Registry updates its Price Paid dataset on a monthly rolling cycle. Please note that legal registration of property sales usually occurs between 2 and 6 weeks following financial completion. As a result, the most recent month’s transactions reflect registrations processed rather than immediate exchange dates.
+      </p>
+
+      <h2 class="text-lg font-bold text-slate-900 dark:text-white mt-8">3. What is Included in Price Paid Data?</h2>
+      <ul class="list-disc pl-5 space-y-1.5">
+        <li>All residential property sales sold for full market value submitted for legal registration.</li>
+        <li>Property archetypes: Detached, Semi-Detached, Terraced, and Flats/Maisonettes.</li>
+        <li>Tenure indication: Freehold vs. Leasehold.</li>
+        <li>Whether the dwelling is a newly built property or established existing housing.</li>
+      </ul>
+
+      <h2 class="text-lg font-bold text-slate-900 dark:text-white mt-8">4. Privacy & Data Rectification</h2>
+      <p>
+        HM Land Registry Price Paid Data is a matter of statutory public record. HousePricesPro does not collect or display personal names of buyers or sellers. If you have questions regarding land records or property identification, contact us at <a href="mailto:privacy@housepricespro.co.uk" class="text-blue-600 underline">privacy@housepricespro.co.uk</a>.
+      </p>
+    </div>
+
+    <AdSlot format="horizontal" />
+  </div>
+</Layout>

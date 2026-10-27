@@ -1,0 +1,240 @@
+---
+// Layout.astro — Master Layout for HousePricesPro.co.uk
+import ConsentBanner from '../components/ConsentBanner.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  schema?: Record<string, any>;
+  ogType?: string;
+}
+
+const {
+  title,
+  description,
+  canonical = Astro.url.href,
+  schema,
+  ogType = 'website'
+} = Astro.props;
+
+const siteUrl = 'https://housepricespro.co.uk';
+---
+
+<!DOCTYPE html>
+<html lang="en-GB" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="canonical" href={canonical} />
+
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content={ogType} />
+  <meta property="og:site_name" content="HousePricesPro.co.uk" />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:locale" content="en_GB" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+
+  <!-- Google Consent Mode v2 (Default Denied) -->
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+  </script>
+
+  <!-- Google Tag Manager / Analytics (placeholder - loads if configured) -->
+  <!-- Google tag (gtag.js) -->
+
+  <!-- Google AdSense Placeholder -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <!-- Schema.org Global WebSite & Organization -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        "url": siteUrl,
+        "name": "HousePricesPro.co.uk",
+        "description": "UK Sold House Prices, HM Land Registry Property Register & Free Valuation Estimates",
+        "publisher": {
+          "@id": `${siteUrl}/#organization`
+        },
+        "inLanguage": "en-GB"
+      },
+      {
+        "@type": "Organization",
+        "@id": `${siteUrl}/#organization`,
+        "name": "HousePricesPro UK",
+        "url": siteUrl,
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${siteUrl}/favicon.svg`
+        }
+      },
+      ...(schema ? [schema] : [])
+    ]
+  })} />
+</head>
+
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col font-sans antialiased selection:bg-blue-500 selection:text-white">
+  <!-- Top Trust & Currency Ticker Bar -->
+  <header class="bg-slate-900 border-b border-slate-800 text-slate-300 text-xs py-1.5 px-4 hidden sm:block">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 text-emerald-400 font-semibold">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          HM Land Registry Data Live
+        </span>
+        <span class="text-slate-500">•</span>
+        <span>Updated Monthly via Open Government Licence v3.0</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-400">
+        <a href="/free-valuation/" class="hover:text-white transition">Book Valuation</a>
+        <span>•</span>
+        <a href="/mortgage-calculator/" class="hover:text-white transition">Mortgages</a>
+        <span>•</span>
+        <a href="/stamp-duty-calculator/" class="hover:text-white transition">SDLT Rates</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Navigation -->
+  <nav class="sticky top-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-8">
+        <a href="/" class="flex items-center gap-2.5 group">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-blue-600/20 group-hover:scale-105 transition-transform">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+          </div>
+          <div>
+            <span class="font-extrabold text-lg tracking-tight text-slate-900 dark:text-white flex items-center">
+              HousePrices<span class="text-blue-600 dark:text-blue-400">Pro</span>
+            </span>
+            <span class="block text-[10px] uppercase font-bold tracking-widest text-slate-400 -mt-1">UK Property Register</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600 dark:text-slate-300">
+          <a href="/" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Sold Prices</a>
+          <a href="/free-valuation/" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Free Valuation</a>
+          <a href="/mortgage-calculator/" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Mortgages</a>
+          <a href="/stamp-duty-calculator/" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Stamp Duty (SDLT)</a>
+          <a href="/conveyancing-quotes/" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Conveyancing</a>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a
+          href="/free-valuation/"
+          class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-bold rounded-lg shadow-sm hover:shadow transition"
+        >
+          <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <span>Value My Home</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <main class="flex-1">
+    <slot />
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-slate-950 text-slate-400 border-t border-slate-900 pt-16 pb-12 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+        <!-- Col 1: Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white font-bold text-xs">HP</div>
+            <span class="text-white font-bold text-base tracking-tight">HousePrices<span class="text-blue-400">Pro</span>.co.uk</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            HousePricesPro is the UK's high-speed property register and sold house price database. Providing comprehensive sales history, property valuations, and mortgage analytics across England and Wales.
+          </p>
+          <div class="text-[11px] text-slate-500 leading-normal">
+            Contains HM Land Registry data © Crown copyright and database right 2026. This data is licensed under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" target="_blank" rel="noopener" class="underline hover:text-slate-400">Open Government Licence v3.0</a>.
+          </div>
+        </div>
+
+        <!-- Col 2: Property Tools -->
+        <div>
+          <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Property Tools</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="/" class="hover:text-white transition">UK Sold House Prices</a></li>
+            <li><a href="/free-valuation/" class="hover:text-white transition">Free Property Valuation</a></li>
+            <li><a href="/mortgage-calculator/" class="hover:text-white transition">Mortgage & LTV Calculator</a></li>
+            <li><a href="/stamp-duty-calculator/" class="hover:text-white transition">Stamp Duty Land Tax (SDLT)</a></li>
+            <li><a href="/conveyancing-quotes/" class="hover:text-white transition">Conveyancing Solicitor Quotes</a></li>
+            <li><a href="/data-methodology/" class="hover:text-white transition">Data Methodology & Frequency</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Popular UK Cities -->
+        <div>
+          <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Popular Postcodes</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="/postcode/sw1a/" class="hover:text-white transition">SW1A — Westminster, London</a></li>
+            <li><a href="/postcode/m1/" class="hover:text-white transition">M1 — Manchester City Centre</a></li>
+            <li><a href="/postcode/b1/" class="hover:text-white transition">B1 — Birmingham Central</a></li>
+            <li><a href="/postcode/bs1/" class="hover:text-white transition">BS1 — Bristol Harbourside</a></li>
+            <li><a href="/postcode/ls1/" class="hover:text-white transition">LS1 — Leeds City Centre</a></li>
+            <li><a href="/postcode/ox1/" class="hover:text-white transition">OX1 — Oxford Central</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Network & Legal -->
+        <div>
+          <h4 class="text-white text-xs font-bold uppercase tracking-wider mb-3">Network & Trust</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="https://checkmotpro.co.uk" target="_blank" rel="noopener" class="hover:text-white transition">CheckMOTPro — UK MOT & Tax</a></li>
+            <li><a href="https://pumpchecker.co.uk" target="_blank" rel="noopener" class="hover:text-white transition">PumpChecker — UK Petrol Prices</a></li>
+            <li><a href="/privacy/" class="hover:text-white transition">Privacy Policy (UK GDPR)</a></li>
+            <li><a href="/cookies/" class="hover:text-white transition">Cookie Policy & PECR</a></li>
+            <li><a href="mailto:contact@housepricespro.co.uk" class="hover:text-white transition">Contact & Data Removal</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          © 2026 HousePricesPro.co.uk — All Rights Reserved. Built for high performance and speed.
+        </div>
+        <div class="flex items-center gap-4">
+          <span>UK Real Estate Intelligence</span>
+          <span>•</span>
+          <span>HM Land Registry Partner Data</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <ConsentBanner />
+</body>
+</html>
