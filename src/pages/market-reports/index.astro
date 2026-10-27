@@ -1,0 +1,234 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import reportData from '../../data/pr_market_report.json';
+
+const title = "UK Property Market Report 2026 — Most Expensive & Affordable Streets | HousePricesPro";
+const description = "Official HM Land Registry data analysis revealing the UK's most expensive residential streets, top luxury single property purchases, and the most affordable postcodes for first-time buyers.";
+---
+
+<Layout title={title} description={description} canonical="https://housepricespro.co.uk/market-reports/">
+  <div class="bg-slate-900 border-b border-slate-800 py-12 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-semibold mb-4">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Official HM Land Registry Open Data Study
+      </div>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight mb-4">
+        UK Property Market Report: <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">Streets of Wealth & Affordability</span>
+      </h1>
+      <p class="text-slate-300 text-base sm:text-lg max-w-3xl leading-relaxed">
+        Comprehensive analysis of <strong>{reportData.totalTransactionsAnalyzed.toLocaleString()}</strong> official registered residential property transactions across England and Wales. Sourced directly from HM Land Registry Price Paid Data under Open Government Licence v3.0.
+      </p>
+    </div>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+    <!-- Quick Key Metrics -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="text-xs uppercase tracking-wider text-slate-500 font-bold mb-1">Total Sales Analyzed</div>
+        <div class="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white font-mono">
+          {reportData.totalTransactionsAnalyzed.toLocaleString()}
+        </div>
+        <div class="text-xs text-emerald-600 dark:text-emerald-400 mt-1">100% verified rogiti</div>
+      </div>
+
+      <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="text-xs uppercase tracking-wider text-slate-500 font-bold mb-1">Top London Street Avg</div>
+        <div class="text-2xl sm:text-3xl font-black text-blue-600 dark:text-blue-400 font-mono">
+          {reportData.londonStreets[0]?.avgPriceFmt}
+        </div>
+        <div class="text-xs text-slate-500 mt-1">{reportData.londonStreets[0]?.street} ({reportData.londonStreets[0]?.outcode})</div>
+      </div>
+
+      <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="text-xs uppercase tracking-wider text-slate-500 font-bold mb-1">Most Affordable District</div>
+        <div class="text-2xl sm:text-3xl font-black text-emerald-600 dark:text-emerald-400 font-mono">
+          {reportData.affordableDistricts[0]?.medianPriceFmt}
+        </div>
+        <div class="text-xs text-slate-500 mt-1">{reportData.affordableDistricts[0]?.town} ({reportData.affordableDistricts[0]?.outcode})</div>
+      </div>
+
+      <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="text-xs uppercase tracking-wider text-slate-500 font-bold mb-1">Highest Single Sale</div>
+        <div class="text-2xl sm:text-3xl font-black text-indigo-600 dark:text-indigo-400 font-mono">
+          {reportData.megaSales[0]?.priceFmt}
+        </div>
+        <div class="text-xs text-slate-500 mt-1">{reportData.megaSales[0]?.town} ({reportData.megaSales[0]?.postcode})</div>
+      </div>
+    </div>
+
+    <!-- Section 1: London Millionaire Streets -->
+    <section class="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-sm">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 font-mono">Capital Luxury</span>
+          <h2 class="text-2xl font-black text-slate-900 dark:text-white">London's Top 10 Most Expensive Streets</h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">Streets with minimum 3 recorded residential sales in the current reporting period.</p>
+        </div>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm">
+          <thead>
+            <tr class="border-b border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-500 uppercase tracking-wider">
+              <th class="py-3 px-4">Rank</th>
+              <th class="py-3 px-4">Street</th>
+              <th class="py-3 px-4">Outcode / Borough</th>
+              <th class="py-3 px-4 text-right">Average Sold Price</th>
+              <th class="py-3 px-4 text-right">Highest Single Sale</th>
+              <th class="py-3 px-4 text-center">Sales</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800 font-medium">
+            {reportData.londonStreets.map((s, idx) => (
+              <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                <td class="py-3 px-4 text-slate-400 font-mono font-bold">#{idx + 1}</td>
+                <td class="py-3 px-4 text-slate-900 dark:text-white font-bold">{s.street}</td>
+                <td class="py-3 px-4 text-slate-500">
+                  <a href={`/postcode/${s.outcode.toLowerCase()}/`} class="text-blue-600 dark:text-blue-400 hover:underline">
+                    {s.outcode}
+                  </a> ({s.borough})
+                </td>
+                <td class="py-3 px-4 text-right text-blue-600 dark:text-blue-400 font-mono font-bold">{s.avgPriceFmt}</td>
+                <td class="py-3 px-4 text-right text-slate-700 dark:text-slate-300 font-mono">{s.maxSaleFmt}</td>
+                <td class="py-3 px-4 text-center text-slate-400">{s.salesCount}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Ad Banner -->
+    <AdSlot />
+
+    <!-- Section 2: Most Expensive Streets Outside London -->
+    <section class="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-sm">
+      <div class="mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 font-mono">Regional Prestige</span>
+        <h2 class="text-2xl font-black text-slate-900 dark:text-white">Top 10 Most Expensive Streets Outside London</h2>
+        <p class="text-xs sm:text-sm text-slate-500 mt-1">High-value residential avenues across Greater Manchester, Hampshire, Merseyside, Yorkshire and Suffolk.</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm">
+          <thead>
+            <tr class="border-b border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-500 uppercase tracking-wider">
+              <th class="py-3 px-4">Rank</th>
+              <th class="py-3 px-4">Street</th>
+              <th class="py-3 px-4">Town / City</th>
+              <th class="py-3 px-4">County</th>
+              <th class="py-3 px-4 text-right">Average Price</th>
+              <th class="py-3 px-4 text-center">Sales</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800 font-medium">
+            {reportData.regionalStreets.map((s, idx) => (
+              <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                <td class="py-3 px-4 text-slate-400 font-mono font-bold">#{idx + 1}</td>
+                <td class="py-3 px-4 text-slate-900 dark:text-white font-bold">{s.street}</td>
+                <td class="py-3 px-4 text-slate-700 dark:text-slate-300">{s.town}</td>
+                <td class="py-3 px-4 text-slate-500">{s.county} ({s.outcode})</td>
+                <td class="py-3 px-4 text-right text-amber-600 dark:text-amber-400 font-mono font-bold">{s.avgPriceFmt}</td>
+                <td class="py-3 px-4 text-center text-slate-400">{s.salesCount}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 3: Affordable Postcodes for First-Time Buyers -->
+    <section class="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-sm">
+      <div class="mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 font-mono">First-Time Buyers</span>
+        <h2 class="text-2xl font-black text-slate-900 dark:text-white">Top 10 Most Affordable Postcodes in England & Wales</h2>
+        <p class="text-xs sm:text-sm text-slate-500 mt-1">Postcode districts with the lowest median sales prices (minimum 15 transactions).</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm">
+          <thead>
+            <tr class="border-b border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-500 uppercase tracking-wider">
+              <th class="py-3 px-4">Rank</th>
+              <th class="py-3 px-4">Postcode District</th>
+              <th class="py-3 px-4">Town / Settlement</th>
+              <th class="py-3 px-4">County</th>
+              <th class="py-3 px-4 text-right">Median Price</th>
+              <th class="py-3 px-4 text-right">Average Price</th>
+              <th class="py-3 px-4 text-center">Sales Count</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800 font-medium">
+            {reportData.affordableDistricts.map((d, idx) => (
+              <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                <td class="py-3 px-4 text-slate-400 font-mono font-bold">#{idx + 1}</td>
+                <td class="py-3 px-4 font-bold">
+                  <a href={`/postcode/${d.outcode.toLowerCase()}/`} class="text-blue-600 dark:text-blue-400 hover:underline">
+                    {d.outcode}
+                  </a>
+                </td>
+                <td class="py-3 px-4 text-slate-900 dark:text-white">{d.town}</td>
+                <td class="py-3 px-4 text-slate-500">{d.county}</td>
+                <td class="py-3 px-4 text-right text-emerald-600 dark:text-emerald-400 font-mono font-bold">{d.medianPriceFmt}</td>
+                <td class="py-3 px-4 text-right text-slate-600 dark:text-slate-400 font-mono">{d.avgPriceFmt}</td>
+                <td class="py-3 px-4 text-center text-slate-400">{d.salesCount}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 4: Regional Price League Table -->
+    <section class="bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 sm:p-8 shadow-sm">
+      <div class="mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 font-mono">Macro Trends</span>
+        <h2 class="text-2xl font-black text-slate-900 dark:text-white">Regional Average Price League Table</h2>
+        <p class="text-xs sm:text-sm text-slate-500 mt-1">Average and median transaction values by UK region based on official registry deeds.</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-sm">
+          <thead>
+            <tr class="border-b border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-500 uppercase tracking-wider">
+              <th class="py-3 px-4">Region</th>
+              <th class="py-3 px-4 text-right">Average Sold Price</th>
+              <th class="py-3 px-4 text-right">Median Sold Price</th>
+              <th class="py-3 px-4 text-right">Sales Recorded</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800 font-medium">
+            {reportData.regionalSummary.map((r) => (
+              <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors">
+                <td class="py-3 px-4 text-slate-900 dark:text-white font-bold">{r.region}</td>
+                <td class="py-3 px-4 text-right text-blue-600 dark:text-blue-400 font-mono font-bold">{r.avgPriceFmt}</td>
+                <td class="py-3 px-4 text-right text-slate-700 dark:text-slate-300 font-mono">{r.medianPriceFmt}</td>
+                <td class="py-3 px-4 text-right text-slate-400 font-mono">{r.salesCount.toLocaleString()}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Media & Press Citation Box (Generates high quality backlink for journalists) -->
+    <section class="bg-gradient-to-r from-slate-900 to-indigo-950 rounded-3xl border border-indigo-500/30 p-8 text-white">
+      <div class="max-w-4xl space-y-4">
+        <span class="text-xs font-bold uppercase tracking-wider text-indigo-400 font-mono">Press & Media Inquiries</span>
+        <h2 class="text-2xl font-black">Using & Citing This Data</h2>
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Journalists, academic researchers and property editors are welcome to reproduce, quote, or embed any data, tables, and statistics from this report. We require standard editorial attribution with a live clickable link to:
+        </p>
+        <div class="bg-slate-950/80 border border-slate-700 p-4 rounded-xl text-xs font-mono text-indigo-300 select-all overflow-x-auto">
+          Source: &lt;a href="https://housepricespro.co.uk/market-reports/" target="_blank" rel="noopener"&gt;HousePricesPro.co.uk UK Property Market Report&lt;/a&gt;
+        </div>
+        <p class="text-xs text-slate-400">
+          For custom regional cuts, bespoke postcode queries, or expert commentary, contact our data research desk via press@housepricespro.co.uk.
+        </p>
+      </div>
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,516 @@
+{
+  "generatedAt": "2026-10-27 19:32:45",
+  "totalTransactionsAnalyzed": 90612,
+  "londonStreets": [
+    {
+      "street": "Albert Embankment",
+      "outcode": "SE1",
+      "borough": "Lambeth",
+      "avgPrice": 22703633,
+      "avgPriceFmt": "\u00a322,703,633",
+      "maxSale": 66500000,
+      "maxSaleFmt": "\u00a366,500,000",
+      "minSale": 10900,
+      "minSaleFmt": "\u00a310,900",
+      "salesCount": 3
+    },
+    {
+      "street": "Leman Street",
+      "outcode": "E1",
+      "borough": "Tower Hamlets",
+      "avgPrice": 16431667,
+      "avgPriceFmt": "\u00a316,431,667",
+      "maxSale": 21000000,
+      "maxSaleFmt": "\u00a321,000,000",
+      "minSale": 440000,
+      "minSaleFmt": "\u00a3440,000",
+      "salesCount": 9
+    },
+    {
+      "street": "Queensway",
+      "outcode": "W2",
+      "borough": "City Of Westminster",
+      "avgPrice": 6653150,
+      "avgPriceFmt": "\u00a36,653,150",
+      "maxSale": 17750000,
+      "maxSaleFmt": "\u00a317,750,000",
+      "minSale": 480000,
+      "minSaleFmt": "\u00a3480,000",
+      "salesCount": 5
+    },
+    {
+      "street": "North Woolwich Road",
+      "outcode": "E16",
+      "borough": "Newham",
+      "avgPrice": 5402333,
+      "avgPriceFmt": "\u00a35,402,333",
+      "maxSale": 15300000,
+      "maxSaleFmt": "\u00a315,300,000",
+      "minSale": 407000,
+      "minSaleFmt": "\u00a3407,000",
+      "salesCount": 3
+    },
+    {
+      "street": "Paddington Green",
+      "outcode": "W2",
+      "borough": "City Of Westminster",
+      "avgPrice": 4994100,
+      "avgPriceFmt": "\u00a34,994,100",
+      "maxSale": 19570500,
+      "maxSaleFmt": "\u00a319,570,500",
+      "minSale": 796800,
+      "minSaleFmt": "\u00a3796,800",
+      "salesCount": 5
+    },
+    {
+      "street": "George Street",
+      "outcode": "W1U",
+      "borough": "City Of Westminster",
+      "avgPrice": 4565000,
+      "avgPriceFmt": "\u00a34,565,000",
+      "maxSale": 8000000,
+      "maxSaleFmt": "\u00a38,000,000",
+      "minSale": 1360000,
+      "minSaleFmt": "\u00a31,360,000",
+      "salesCount": 4
+    },
+    {
+      "street": "Melsetter Road",
+      "outcode": "E17",
+      "borough": "Waltham Forest",
+      "avgPrice": 4471496,
+      "avgPriceFmt": "\u00a34,471,496",
+      "maxSale": 34650000,
+      "maxSaleFmt": "\u00a334,650,000",
+      "minSale": 116466,
+      "minSaleFmt": "\u00a3116,466",
+      "salesCount": 8
+    },
+    {
+      "street": "Waterfront Drive",
+      "outcode": "SW10",
+      "borough": "Hammersmith And Fulham",
+      "avgPrice": 3850865,
+      "avgPriceFmt": "\u00a33,850,865",
+      "maxSale": 4430000,
+      "maxSaleFmt": "\u00a34,430,000",
+      "minSale": 3582860,
+      "minSaleFmt": "\u00a33,582,860",
+      "salesCount": 4
+    },
+    {
+      "street": "Grove End Road",
+      "outcode": "NW8",
+      "borough": "City Of Westminster",
+      "avgPrice": 3493750,
+      "avgPriceFmt": "\u00a33,493,750",
+      "maxSale": 10750000,
+      "maxSaleFmt": "\u00a310,750,000",
+      "minSale": 875000,
+      "minSaleFmt": "\u00a3875,000",
+      "salesCount": 4
+    },
+    {
+      "street": "Frognal Lane",
+      "outcode": "NW3",
+      "borough": "Camden",
+      "avgPrice": 3448000,
+      "avgPriceFmt": "\u00a33,448,000",
+      "maxSale": 5850000,
+      "maxSaleFmt": "\u00a35,850,000",
+      "minSale": 700000,
+      "minSaleFmt": "\u00a3700,000",
+      "salesCount": 3
+    }
+  ],
+  "regionalStreets": [
+    {
+      "street": "Winchester Road",
+      "town": "Basingstoke",
+      "county": "Hampshire",
+      "outcode": "RG22",
+      "avgPrice": 17500000,
+      "avgPriceFmt": "\u00a317,500,000",
+      "maxSale": 17500000,
+      "maxSaleFmt": "\u00a317,500,000",
+      "salesCount": 3
+    },
+    {
+      "street": "Ashton Old Road",
+      "town": "Manchester",
+      "county": "Greater Manchester",
+      "outcode": "M12",
+      "avgPrice": 11730000,
+      "avgPriceFmt": "\u00a311,730,000",
+      "maxSale": 11730000,
+      "maxSaleFmt": "\u00a311,730,000",
+      "salesCount": 4
+    },
+    {
+      "street": "Edge Lane",
+      "town": "Liverpool",
+      "county": "Merseyside",
+      "outcode": "L7",
+      "avgPrice": 10360000,
+      "avgPriceFmt": "\u00a310,360,000",
+      "maxSale": 10360000,
+      "maxSaleFmt": "\u00a310,360,000",
+      "salesCount": 5
+    },
+    {
+      "street": "Knollbeck Lane",
+      "town": "Barnsley",
+      "county": "South Yorkshire",
+      "outcode": "S73",
+      "avgPrice": 8678024,
+      "avgPriceFmt": "\u00a38,678,024",
+      "maxSale": 16002097,
+      "maxSaleFmt": "\u00a316,002,097",
+      "salesCount": 4
+    },
+    {
+      "street": "Sumner Road",
+      "town": "Diss",
+      "county": "Suffolk",
+      "outcode": "IP22",
+      "avgPrice": 8388833,
+      "avgPriceFmt": "\u00a38,388,833",
+      "maxSale": 15600000,
+      "maxSaleFmt": "\u00a315,600,000",
+      "salesCount": 3
+    },
+    {
+      "street": "Centenary Plaza",
+      "town": "Southampton",
+      "county": "Southampton",
+      "outcode": "SO19",
+      "avgPrice": 7922996,
+      "avgPriceFmt": "\u00a37,922,996",
+      "maxSale": 8799864,
+      "maxSaleFmt": "\u00a38,799,864",
+      "salesCount": 3
+    },
+    {
+      "street": "Beauchamp Road",
+      "town": "Dunstable",
+      "county": "Central Bedfordshire",
+      "outcode": "LU5",
+      "avgPrice": 5508333,
+      "avgPriceFmt": "\u00a35,508,333",
+      "maxSale": 15020000,
+      "maxSaleFmt": "\u00a315,020,000",
+      "salesCount": 3
+    },
+    {
+      "street": "Heather Pastures",
+      "town": "Scarborough",
+      "county": "North Yorkshire",
+      "outcode": "YO11",
+      "avgPrice": 5504965,
+      "avgPriceFmt": "\u00a35,504,965",
+      "maxSale": 21180000,
+      "maxSaleFmt": "\u00a321,180,000",
+      "salesCount": 5
+    },
+    {
+      "street": "St Andrews Crescent",
+      "town": "Didcot",
+      "county": "Oxfordshire",
+      "outcode": "OX11",
+      "avgPrice": 5470000,
+      "avgPriceFmt": "\u00a35,470,000",
+      "maxSale": 8760000,
+      "maxSaleFmt": "\u00a38,760,000",
+      "salesCount": 3
+    },
+    {
+      "street": "Bow Street",
+      "town": "Dukinfield",
+      "county": "Greater Manchester",
+      "outcode": "SK16",
+      "avgPrice": 5160000,
+      "avgPriceFmt": "\u00a35,160,000",
+      "maxSale": 5160000,
+      "maxSaleFmt": "\u00a35,160,000",
+      "salesCount": 4
+    }
+  ],
+  "affordableDistricts": [
+    {
+      "outcode": "DN31",
+      "town": "Grimsby",
+      "county": "North East Lincolnshire",
+      "avgPrice": 70011,
+      "avgPriceFmt": "\u00a370,011",
+      "medianPrice": 60500,
+      "medianPriceFmt": "\u00a360,500",
+      "salesCount": 17
+    },
+    {
+      "outcode": "TS1",
+      "town": "Middlesbrough",
+      "county": "Middlesbrough",
+      "avgPrice": 72935,
+      "avgPriceFmt": "\u00a372,935",
+      "medianPrice": 70000,
+      "medianPriceFmt": "\u00a370,000",
+      "salesCount": 24
+    },
+    {
+      "outcode": "DL4",
+      "town": "Shildon",
+      "county": "County Durham",
+      "avgPrice": 103020,
+      "avgPriceFmt": "\u00a3103,020",
+      "medianPrice": 77000,
+      "medianPriceFmt": "\u00a377,000",
+      "salesCount": 27
+    },
+    {
+      "outcode": "SR8",
+      "town": "Peterlee",
+      "county": "County Durham",
+      "avgPrice": 111405,
+      "avgPriceFmt": "\u00a3111,405",
+      "medianPrice": 78000,
+      "medianPriceFmt": "\u00a378,000",
+      "salesCount": 67
+    },
+    {
+      "outcode": "DL17",
+      "town": "Ferryhill",
+      "county": "County Durham",
+      "avgPrice": 120452,
+      "avgPriceFmt": "\u00a3120,452",
+      "medianPrice": 78000,
+      "medianPriceFmt": "\u00a378,000",
+      "salesCount": 39
+    },
+    {
+      "outcode": "LL41",
+      "town": "Blaenau Ffestiniog",
+      "county": "Gwynedd",
+      "avgPrice": 120867,
+      "avgPriceFmt": "\u00a3120,867",
+      "medianPrice": 80000,
+      "medianPriceFmt": "\u00a380,000",
+      "salesCount": 15
+    },
+    {
+      "outcode": "DL14",
+      "town": "Bishop Auckland",
+      "county": "County Durham",
+      "avgPrice": 115365,
+      "avgPriceFmt": "\u00a3115,365",
+      "medianPrice": 80000,
+      "medianPriceFmt": "\u00a380,000",
+      "salesCount": 53
+    },
+    {
+      "outcode": "DN32",
+      "town": "Grimsby",
+      "county": "North East Lincolnshire",
+      "avgPrice": 110501,
+      "avgPriceFmt": "\u00a3110,501",
+      "medianPrice": 84000,
+      "medianPriceFmt": "\u00a384,000",
+      "salesCount": 61
+    },
+    {
+      "outcode": "FY1",
+      "town": "Blackpool",
+      "county": "Blackpool",
+      "avgPrice": 101469,
+      "avgPriceFmt": "\u00a3101,469",
+      "medianPrice": 88750,
+      "medianPriceFmt": "\u00a388,750",
+      "salesCount": 64
+    },
+    {
+      "outcode": "TS3",
+      "town": "Middlesbrough",
+      "county": "Middlesbrough",
+      "avgPrice": 87942,
+      "avgPriceFmt": "\u00a387,942",
+      "medianPrice": 91440,
+      "medianPriceFmt": "\u00a391,440",
+      "salesCount": 28
+    }
+  ],
+  "megaSales": [
+    {
+      "price": 66500000,
+      "priceFmt": "\u00a366,500,000",
+      "address": "38 - 41 Albert Embankment",
+      "town": "London",
+      "postcode": "SE1 7TL",
+      "type": "Other / Estate",
+      "tenure": "Freehold",
+      "date": "08 August 2025"
+    },
+    {
+      "price": 65300000,
+      "priceFmt": "\u00a365,300,000",
+      "address": "Lindsay Court Loampit Vale",
+      "town": "London",
+      "postcode": "SE13 7LL",
+      "type": "Other / Estate",
+      "tenure": "Leasehold",
+      "date": "21 July 2026"
+    },
+    {
+      "price": 47200000,
+      "priceFmt": "\u00a347,200,000",
+      "address": "57 - 59 Welbeck Street",
+      "town": "London",
+      "postcode": "W1G 9BL",
+      "type": "Other / Estate",
+      "tenure": "Leasehold",
+      "date": "16 June 2022"
+    },
+    {
+      "price": 45542590,
+      "priceFmt": "\u00a345,542,590",
+      "address": "Edwards Point, 28 Reed Avenue",
+      "town": "London",
+      "postcode": "E3 3DN",
+      "type": "Other / Estate",
+      "tenure": "Leasehold",
+      "date": "27 March 2026"
+    },
+    {
+      "price": 44000000,
+      "priceFmt": "\u00a344,000,000",
+      "address": "Unit 5010 Western Approach Distribution Park",
+      "town": "Bristol",
+      "postcode": "BS35 4GG",
+      "type": "Other / Estate",
+      "tenure": "Freehold",
+      "date": "29 August 2025"
+    },
+    {
+      "price": 40380000,
+      "priceFmt": "\u00a340,380,000",
+      "address": "Cornwall Coliseum",
+      "town": "St Austell",
+      "postcode": "PL25 3RG",
+      "type": "Other / Estate",
+      "tenure": "Freehold",
+      "date": "15 October 2025"
+    },
+    {
+      "price": 40300000,
+      "priceFmt": "\u00a340,300,000",
+      "address": "Bayer House Strawberry Hill",
+      "town": "Newbury",
+      "postcode": "RG14 1JA",
+      "type": "Other / Estate",
+      "tenure": "Leasehold",
+      "date": "06 November 2025"
+    },
+    {
+      "price": 40000000,
+      "priceFmt": "\u00a340,000,000",
+      "address": "One Hyde Park, 100 Knightsbridge",
+      "town": "London",
+      "postcode": "SW1X 7LJ",
+      "type": "Apartment / Penthouse",
+      "tenure": "Leasehold",
+      "date": "28 November 2025"
+    },
+    {
+      "price": 39620000,
+      "priceFmt": "\u00a339,620,000",
+      "address": "Unit 3 Ridgeway",
+      "town": "Ipswich",
+      "postcode": "IP6 0FR",
+      "type": "Other / Estate",
+      "tenure": "Freehold",
+      "date": "24 January 2025"
+    },
+    {
+      "price": 38099347,
+      "priceFmt": "\u00a338,099,347",
+      "address": "Unit 3 Ridgeway",
+      "town": "Ipswich",
+      "postcode": "IP6 0FR",
+      "type": "Other / Estate",
+      "tenure": "Freehold",
+      "date": "26 September 2022"
+    }
+  ],
+  "regionalSummary": [
+    {
+      "region": "Greater London",
+      "avgPrice": 795864,
+      "avgPriceFmt": "\u00a3795,864",
+      "medianPrice": 500000,
+      "medianPriceFmt": "\u00a3500,000",
+      "salesCount": 10056
+    },
+    {
+      "region": "South East & Home Counties",
+      "avgPrice": 512421,
+      "avgPriceFmt": "\u00a3512,421",
+      "medianPrice": 390000,
+      "medianPriceFmt": "\u00a3390,000",
+      "salesCount": 15282
+    },
+    {
+      "region": "South West",
+      "avgPrice": 389403,
+      "avgPriceFmt": "\u00a3389,403",
+      "medianPrice": 300000,
+      "medianPriceFmt": "\u00a3300,000",
+      "salesCount": 6114
+    },
+    {
+      "region": "West Midlands",
+      "avgPrice": 337331,
+      "avgPriceFmt": "\u00a3337,331",
+      "medianPrice": 260000,
+      "medianPriceFmt": "\u00a3260,000",
+      "salesCount": 7281
+    },
+    {
+      "region": "East of England & Midlands",
+      "avgPrice": 334386,
+      "avgPriceFmt": "\u00a3334,386",
+      "medianPrice": 259995,
+      "medianPriceFmt": "\u00a3259,995",
+      "salesCount": 31411
+    },
+    {
+      "region": "Wales",
+      "avgPrice": 306019,
+      "avgPriceFmt": "\u00a3306,019",
+      "medianPrice": 235000,
+      "medianPriceFmt": "\u00a3235,000",
+      "salesCount": 1253
+    },
+    {
+      "region": "North West",
+      "avgPrice": 295898,
+      "avgPriceFmt": "\u00a3295,898",
+      "medianPrice": 219000,
+      "medianPriceFmt": "\u00a3219,000",
+      "salesCount": 8448
+    },
+    {
+      "region": "Yorkshire & Humber",
+      "avgPrice": 295744,
+      "avgPriceFmt": "\u00a3295,744",
+      "medianPrice": 215000,
+      "medianPriceFmt": "\u00a3215,000",
+      "salesCount": 7421
+    },
+    {
+      "region": "North East",
+      "avgPrice": 228703,
+      "avgPriceFmt": "\u00a3228,703",
+      "medianPrice": 165082,
+      "medianPriceFmt": "\u00a3165,082",
+      "salesCount": 3346
+    }
+  ]
+}
