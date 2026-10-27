@@ -79,7 +79,7 @@ const outcodeUpper = outcode.toUpperCase();
       </span>
     </div>
     <span class="text-[11px] text-slate-400">
-      Map tiles © OpenStreetMap & CartoDB
+      Map tiles © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" class="underline hover:text-slate-500">OpenStreetMap</a> contributors
     </span>
   </div>
 </div>
@@ -150,10 +150,9 @@ const outcodeUpper = outcode.toUpperCase();
           scrollWheelZoom: false
         });
 
-        // Add CartoDB Positron clean tiles
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-          subdomains: 'abcd',
+        // Add OpenStreetMap official clean tiles (100% free, no API key required)
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
           maxZoom: 19
         }).addTo(map);
 
