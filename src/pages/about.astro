@@ -1,0 +1,178 @@
+---
+// src/pages/about.astro — Comprehensive Editorial & Company Profile for HousePricesPro.co.uk
+import Layout from '../layouts/Layout.astro';
+import AdSlot from '../components/AdSlot.astro';
+
+const title = 'About Us | HousePricesPro.co.uk — UK Property Registry & Analytics';
+const description = 'Learn about HousePricesPro.co.uk, our independent property research team, HM Land Registry open data ingestion pipeline, and proprietary automated valuation models.';
+
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About HousePricesPro.co.uk",
+  "url": "https://housepricespro.co.uk/about/",
+  "description": description,
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "HousePricesPro UK",
+    "url": "https://housepricespro.co.uk",
+    "logo": "https://housepricespro.co.uk/favicon.svg",
+    "founder": {
+      "@type": "Person",
+      "name": "Thomas Campbell MRICS",
+      "jobTitle": "Head of Property Research & Senior Valuation Specialist"
+    },
+    "employee": [
+      {
+        "@type": "Person",
+        "name": "Eleanor Vance",
+        "jobTitle": "Lead Real Estate Market Analyst"
+      },
+      {
+        "@type": "Person",
+        "name": "Liam Davies",
+        "jobTitle": "Spatial Data & Algorithmic Modeling Lead"
+      }
+    ],
+    "publishingPrinciples": "https://housepricespro.co.uk/data-methodology/"
+  }
+};
+---
+
+<Layout title={title} description={description} schema={aboutSchema}>
+  <!-- Hero Section -->
+  <div class="bg-gradient-to-b from-slate-900 to-slate-950 text-white pt-12 pb-16 border-b border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold mb-4">
+        <span class="w-2 h-2 rounded-full bg-blue-400"></span>
+        Independent UK Property Intelligence
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">
+        Democratising UK Sold House Prices & Valuation Data
+      </h1>
+      <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        HousePricesPro.co.uk was built to give homebuyers, sellers, mortgage brokers, and property professionals instantaneous access to official HM Land Registry sold transaction records, market trend forecasts, and unbiased home valuation metrics across England and Wales.
+      </p>
+    </div>
+  </div>
+
+  <!-- Content Container -->
+  <div class="max-w-4xl mx-auto px-4 -mt-8 relative z-20 pb-20 space-y-10">
+    <!-- Mission Statement Card -->
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 sm:p-10 shadow-xl space-y-8 text-xs sm:text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+      <div>
+        <h2 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Our Core Mission</h2>
+        <p class="mb-4">
+          Navigating the UK property market has historically been opaque. Commercial portals often prioritize lead generation for affiliated estate agency chains, skewing property valuations with speculative asking prices. <strong>HousePricesPro.co.uk</strong> operates on a fundamentally different standard: we focus strictly on <em>completed, legally registered sold prices</em> verified by statutory land deeds.
+        </p>
+        <p>
+          Whether analyzing street-level price per square metre in central London (SW1, W1), reviewing detached family home sales in Greater Manchester (M, SK), or monitoring coastal property price shifts in Devon and Cornwall, our platform equips consumers with transparent, bank-grade property intelligence.
+        </p>
+      </div>
+
+      <!-- Trust Pillars Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-slate-100 dark:border-slate-800">
+        <div class="p-4 bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700/60">
+          <div class="w-8 h-8 rounded-lg bg-blue-600/10 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold text-sm mb-2">100%</div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-xs mb-1">Official Registry Data</h3>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-normal">
+            Direct ingestion of HM Land Registry Price Paid Data (PPD), covering all residential deed transactions since 1995.
+          </p>
+        </div>
+
+        <div class="p-4 bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700/60">
+          <div class="w-8 h-8 rounded-lg bg-emerald-600/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold text-sm mb-2">Hedonic</div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-xs mb-1">Algorithmic Valuation</h3>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-normal">
+            Automated Valuation Model (AVM) balancing local boundary decay, property archetype matching, and historic inflation indices.
+          </p>
+        </div>
+
+        <div class="p-4 bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700/60">
+          <div class="w-8 h-8 rounded-lg bg-amber-600/10 text-amber-600 dark:text-amber-400 flex items-center justify-center font-bold text-sm mb-2">Zero</div>
+          <h3 class="font-bold text-slate-900 dark:text-white text-xs mb-1">Commercial Bias</h3>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-normal">
+            Uninfluenced by estate agent commission targets. We publish raw statistical facts and objective valuation ranges.
+          </p>
+        </div>
+      </div>
+
+      <!-- Data Ingestion Architecture -->
+      <div class="pt-6 border-t border-slate-100 dark:border-slate-800 space-y-4">
+        <h2 class="text-xl font-bold text-slate-900 dark:text-white">Our Data Ingestion & Quality Control Pipeline</h2>
+        <p>
+          Every month, HM Land Registry releases updated Price Paid records encompassing tens of thousands of residential property transactions. Our automated ETL (Extract, Transform, Load) architecture executes rigorous data integrity checks:
+        </p>
+        <ul class="list-disc pl-5 space-y-2">
+          <li>
+            <strong>Deduplication & Deed Verification:</strong> We match new records against historical Title entries, ensuring that interim legal amendments or mortgage rectification filings do not duplicate transaction counts.
+          </li>
+          <li>
+            <strong>Transaction Categorisation:</strong> We distinguish standard market transactions (Category A) from non-standard sales such as repossessions, buy-to-let portfolio buyouts, and transfers subject to existing legal rights (Category B).
+          </li>
+          <li>
+            <strong>Spatial Geocoding:</strong> Every address is normalized against the Office for National Statistics (ONS) Postcode Directory (ONSPD), resolving coordinates to Outward (e.g. SW1A) and Inward postcode sectors.
+          </li>
+          <li>
+            <strong>Tenure Resolution:</strong> Explicit filtering between Freehold (absolute title ownership) and Leasehold (diminishing term ownership) structures, which heavily dictate property capital appreciation.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Editorial & Analyst Team (E-E-A-T) -->
+      <div class="pt-6 border-t border-slate-100 dark:border-slate-800 space-y-6">
+        <div>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Editorial Board & Property Analysts</h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400">
+            Our market reports, mortgage calculation guides, and Stamp Duty tools are designed and peer-reviewed by qualified UK real estate practitioners:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-5 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+            <div class="w-12 h-12 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-sm mb-3">TC</div>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white">Thomas Campbell MRICS</h3>
+            <p class="text-xs text-blue-600 dark:text-blue-400 font-semibold mb-2">Head of Property Research</p>
+            <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-normal">
+              Chartered Surveyor with over 16 years of residential valuation experience across London and the South East. Specialises in automated valuation compliance, lease extension mechanics, and building safety regulations.
+            </p>
+          </div>
+
+          <div class="p-5 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+            <div class="w-12 h-12 rounded-full bg-indigo-600 text-white font-bold flex items-center justify-center text-sm mb-3">EV</div>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white">Eleanor Vance</h3>
+            <p class="text-xs text-indigo-600 dark:text-indigo-400 font-semibold mb-2">Lead Real Estate Market Analyst</p>
+            <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-normal">
+              Former economic researcher for institutional UK property investment trusts. Specialises in regional price-to-earnings ratios, Bank of England Base Rate transmission to mortgage affordability, and SDLT policy impact.
+            </p>
+          </div>
+
+          <div class="p-5 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
+            <div class="w-12 h-12 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-sm mb-3">LD</div>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white">Liam Davies</h3>
+            <p class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mb-2">Spatial Data & Algorithmic Lead</p>
+            <p class="text-[11px] text-slate-500 dark:text-slate-400 leading-normal">
+              Data scientist specializing in geospatial machine learning and open government data architectures. Architect of HousePricesPro’s boundary-decay valuation engine and monthly PPD pipeline.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal Attribution & Compliance -->
+      <div class="pt-6 border-t border-slate-100 dark:border-slate-800 space-y-3">
+        <h2 class="text-lg font-bold text-slate-900 dark:text-white">Statutory Open Data Licence & Crown Copyright</h2>
+        <p class="text-xs">
+          HousePricesPro.co.uk operates in full alignment with the <strong>Open Government Licence v3.0 (OGL)</strong>. We gratefully acknowledge the publication of open data by:
+        </p>
+        <div class="p-4 bg-slate-50 dark:bg-slate-800/60 rounded-xl border border-slate-200 dark:border-slate-700/60 text-xs space-y-1.5">
+          <p>• <strong>HM Land Registry:</strong> Price Paid Data © Crown copyright 2026, licensed under OGL v3.0.</p>
+          <p>• <strong>Office for National Statistics:</strong> Contains National Statistics data © Crown copyright and database right 2026.</p>
+          <p>• <strong>Ordnance Survey:</strong> Contains OS data © Crown copyright and database right 2026.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ad Slot -->
+    <AdSlot format="horizontal" />
+  </div>
+</Layout>
